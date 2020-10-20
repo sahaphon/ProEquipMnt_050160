@@ -1,0 +1,9 @@
+ 
+  ****************** 30/04/57 ************
+  รายการแก้ไข
+  - เพิ่ม int_size ใน table
+    -  tmp_delv_trn
+    -  delvtrn
+    -  v_rpt_delvr
+    -  tmp_rpt_delvr
+    -  v_rpt_delvr2

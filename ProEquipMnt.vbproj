@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C3340847-740A-4773-B839-C0EBAE8841D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ProEquipMnt.My.MyApplication</StartupObject>
+    <RootNamespace>ProEquipMnt</RootNamespace>
+    <AssemblyName>ProEquipMnt</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/ProEquipMnt/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProEquipMnt.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProEquipMnt.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="acclListBar, Version=1.0.1326.27884, Culture=neutral, PublicKeyToken=6e1b8f817e866f76">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ListBar_DLL\acclListBar.dll</HintPath>
+    </Reference>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAeFixRecv.Designer.vb">
+      <DependentUpon>frmAeFixRecv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAeFixRecv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAeArkBlk.Designer.vb">
+      <DependentUpon>frmAeArkBlk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAeArkBlk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAeCutting.Designer.vb">
+      <DependentUpon>frmAeCutting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAeCutting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAeDocFile.designer.vb">
+      <DependentUpon>frmAeDocFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAeDocFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAeFixEqpmnt.Designer.vb">
+      <DependentUpon>frmAeFixEqpmnt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAeFixEqpmnt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAeMoldInj.Designer.vb">
+      <DependentUpon>frmAeMoldInj.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAeMoldInj.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAeNotifyIssue.Designer.vb">
+      <DependentUpon>frmAeNotifyIssue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAeNotifyIssue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAeScreenBlk.Designer.vb">
+      <DependentUpon>frmAeScreenBlk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAeScreenBlk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAeUser.designer.vb">
+      <DependentUpon>frmAeUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAeUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmApproveDelv.Designer.vb">
+      <DependentUpon>frmApproveDelv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmApproveDelv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmApproveIssue.Designer.vb">
+      <DependentUpon>frmApproveIssue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmApproveIssue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArkBlk.Designer.vb">
+      <DependentUpon>frmArkBlk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmArkBlk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePass.designer.vb">
+      <DependentUpon>frmChangePass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCutting.Designer.vb">
+      <DependentUpon>frmCutting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCutting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDelv.Designer.vb">
+      <DependentUpon>frmDelv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDelv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDocFile.designer.vb">
+      <DependentUpon>frmDocFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAeDelv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAeDelv.Designer.vb">
+      <DependentUpon>frmAeDelv.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEqpSheet.Designer.vb">
+      <DependentUpon>frmEqpSheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEqpSheet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFixEqpmnt.Designer.vb">
+      <DependentUpon>frmFixEqpmnt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFixEqpmnt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFixRecv.Designer.vb">
+      <DependentUpon>frmFixRecv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFixRecv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainPro.designer.vb">
+      <DependentUpon>frmMainPro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainPro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoldInj.Designer.vb">
+      <DependentUpon>frmMoldInj.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMoldInj.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotifyIssue.Designer.vb">
+      <DependentUpon>frmNotifyIssue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotifyIssue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPastMold.Designer.vb">
+      <DependentUpon>frmPastMold.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPastMold.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWipImp.designer.vb">
+      <DependentUpon>frmWipImp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWipImp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPMoldinj.Designer.vb">
+      <DependentUpon>frmPMoldinj.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPMoldinj.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrntProgress.Designer.vb">
+      <DependentUpon>frmPrntProgress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrntProgress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptCentral.Designer.vb">
+      <DependentUpon>frmRptCentral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptCentral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptDelvApprove.Designer.vb">
+      <DependentUpon>frmRptDelvApprove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptDelvApprove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptDelvApprove2.Designer.vb">
+      <DependentUpon>frmRptDelvApprove2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptDelvApprove2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptEqpTrnsf.Designer.vb">
+      <DependentUpon>frmRptEqpTrnsf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptEqpTrnsf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptIssueNotify.Designer.vb">
+      <DependentUpon>frmRptIssueNotify.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptIssueNotify.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptIssueReceive.Designer.vb">
+      <DependentUpon>frmRptIssueReceive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptIssueReceive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScreenBlk.Designer.vb">
+      <DependentUpon>frmScreenBlk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmScreenBlk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSendPdf.Designer.vb">
+      <DependentUpon>frmSendPdf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSendPdf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserPermit.designer.vb">
+      <DependentUpon>frmUserPermit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserPermit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWaiting.Designer.vb">
+      <DependentUpon>frmWaiting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWaiting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MdlConSQL.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ResChanger.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAeFixRecv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAeFixRecv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAeArkBlk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAeArkBlk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAeCutting.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAeCutting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAeDocFile.resx">
+      <DependentUpon>frmAeDocFile.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAeFixEqpmnt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAeFixEqpmnt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAeMoldInj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAeMoldInj.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAeNotifyIssue.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAeNotifyIssue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAeScreenBlk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAeScreenBlk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAeUser.resx">
+      <DependentUpon>frmAeUser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmApproveDelv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmApproveDelv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmApproveIssue.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmApproveIssue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArkBlk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmArkBlk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePass.resx">
+      <DependentUpon>frmChangePass.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCutting.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCutting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDelv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDelv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDocFile.resx">
+      <DependentUpon>frmDocFile.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAeDelv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAeDelv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEqpSheet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEqpSheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFixEqpmnt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFixEqpmnt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFixRecv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFixRecv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainPro.resx">
+      <DependentUpon>frmMainPro.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMoldInj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMoldInj.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotifyIssue.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmNotifyIssue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPastMold.resx">
+      <DependentUpon>frmPastMold.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWipImp.resx">
+      <DependentUpon>frmWipImp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPMoldinj.resx">
+      <DependentUpon>frmPMoldinj.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrntProgress.resx">
+      <DependentUpon>frmPrntProgress.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptCentral.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRptCentral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptDelvApprove.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRptDelvApprove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptDelvApprove2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRptDelvApprove2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptEqpTrnsf.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRptEqpTrnsf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptIssueNotify.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRptIssueNotify.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptIssueReceive.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRptIssueReceive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScreenBlk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmScreenBlk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSendPdf.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSendPdf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserPermit.resx">
+      <DependentUpon>frmUserPermit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWaiting.resx">
+      <DependentUpon>frmWaiting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ma.png" />
+    <None Include="Resources\Chk.png" />
+    <None Include="Resources\Open.ico" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\del.ico" />
+    <None Include="Resources\Delete_16x16.png" />
+    <None Include="Resources\Open_16x16.png" />
+    <None Include="Resources\Edit_16x16.png" />
+    <None Include="Resources\Cancel_16x16.png" />
+    <None Include="Resources\Save_16x16.png" />
+    <None Include="Resources\Add_16x16.png" />
+    <None Include="Resources\Preview_16x16.png" />
+    <None Include="Resources\16x16wait.png" />
+    <None Include="Resources\ledGreen.png" />
+    <None Include="Resources\ledRed.png" />
+    <None Include="Resources\yellow.png" />
+    <None Include="Resources\ledYellow.png" />
+    <None Include="Resources\_16x16ledyellow.png" />
+    <None Include="Resources\_16x16%2817%29ledGray.png" />
+    <None Include="Resources\recycle-bin_16x16.png" />
+    <None Include="Resources\load_process.gif" />
+    <None Include="Resources\spinner.gif" />
+    <None Include="Resources\wait_60.gif" />
+    <None Include="Resources\exit_winxp.png" />
+    <None Include="Resources\wall_prog.png" />
+    <None Include="Resources\Downloads_30px.png" />
+    <None Include="Resources\users_30px.png" />
+    <None Include="Resources\folder_30px.png" />
+    <Content Include="tool_pro.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
