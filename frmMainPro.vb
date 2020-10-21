@@ -429,12 +429,23 @@ Dim intY As Integer = Screen.PrimaryScreen.Bounds.Height
 
     End Sub
 
-    Private Sub mnRptdvl_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mnRptdvl.Click
-        frmRptEqpTrnsf.Show()
-    End Sub
+    'Private Sub mnRptdvl_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mnRptdvl.Click
+    '    frmRptEqpTrnsf.Show()
+    'End Sub
 
     Private Sub mnWipnewImport_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles mnWipnewImport.Click
         frmWipImp.ShowDialog()
+    End Sub
+
+    Private Sub mnRptMold_Click(sender As Object, e As EventArgs) Handles mnRptMold.Click
+        Me.Cursor = System.Windows.Forms.Cursors.WaitCursor
+
+        With frmRptCentral
+            Me.lblRptCentral.Text = "K"
+            .ShowDialog()
+        End With
+
+        Me.Cursor = System.Windows.Forms.Cursors.Arrow
     End Sub
 
 End Class

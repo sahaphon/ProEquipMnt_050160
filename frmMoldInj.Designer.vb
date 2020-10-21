@@ -122,8 +122,9 @@ Partial Class frmMoldInj
         Me.Panel2.Controls.Add(Me.lblDocMenu)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(892, 45)
+        Me.Panel2.Size = New System.Drawing.Size(1784, 87)
         Me.Panel2.TabIndex = 33
         '
         'lblDocMenu
@@ -131,18 +132,20 @@ Partial Class frmMoldInj
         Me.lblDocMenu.AutoSize = True
         Me.lblDocMenu.Font = New System.Drawing.Font("Cordia New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDocMenu.ForeColor = System.Drawing.Color.White
-        Me.lblDocMenu.Location = New System.Drawing.Point(259, 3)
+        Me.lblDocMenu.Location = New System.Drawing.Point(518, 6)
+        Me.lblDocMenu.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblDocMenu.Name = "lblDocMenu"
-        Me.lblDocMenu.Size = New System.Drawing.Size(418, 40)
+        Me.lblDocMenu.Size = New System.Drawing.Size(834, 80)
         Me.lblDocMenu.TabIndex = 4
         Me.lblDocMenu.Text = "แฟ้มข้อมูลอุปกรณ์โมล์ดฉีด,พ่น,หยอดเคมี"
         '
         'tabSearch
         '
         Me.tabSearch.ImageIndex = 2
-        Me.tabSearch.Location = New System.Drawing.Point(4, 4)
+        Me.tabSearch.Location = New System.Drawing.Point(8, 8)
+        Me.tabSearch.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.tabSearch.Name = "tabSearch"
-        Me.tabSearch.Size = New System.Drawing.Size(884, 0)
+        Me.tabSearch.Size = New System.Drawing.Size(1768, 0)
         Me.tabSearch.TabIndex = 3
         Me.tabSearch.Text = "ค้นหา"
         Me.tabSearch.UseVisualStyleBackColor = True
@@ -150,16 +153,17 @@ Partial Class frmMoldInj
         'lblPage
         '
         Me.lblPage.Name = "lblPage"
-        Me.lblPage.Size = New System.Drawing.Size(13, 22)
+        Me.lblPage.Size = New System.Drawing.Size(28, 45)
         Me.lblPage.Text = "1"
         Me.lblPage.Visible = False
         '
         'tabFilter
         '
         Me.tabFilter.ImageIndex = 7
-        Me.tabFilter.Location = New System.Drawing.Point(4, 4)
+        Me.tabFilter.Location = New System.Drawing.Point(8, 8)
+        Me.tabFilter.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.tabFilter.Name = "tabFilter"
-        Me.tabFilter.Size = New System.Drawing.Size(884, 0)
+        Me.tabFilter.Size = New System.Drawing.Size(1768, 0)
         Me.tabFilter.TabIndex = 6
         Me.tabFilter.Text = "กรอง"
         Me.tabFilter.UseVisualStyleBackColor = True
@@ -167,9 +171,10 @@ Partial Class frmMoldInj
         'tabDel
         '
         Me.tabDel.ImageIndex = 0
-        Me.tabDel.Location = New System.Drawing.Point(4, 4)
+        Me.tabDel.Location = New System.Drawing.Point(8, 8)
+        Me.tabDel.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.tabDel.Name = "tabDel"
-        Me.tabDel.Size = New System.Drawing.Size(884, 0)
+        Me.tabDel.Size = New System.Drawing.Size(1768, 0)
         Me.tabDel.TabIndex = 4
         Me.tabDel.Text = "ลบ"
         Me.tabDel.UseVisualStyleBackColor = True
@@ -177,9 +182,10 @@ Partial Class frmMoldInj
         'tabExit
         '
         Me.tabExit.ImageIndex = 1
-        Me.tabExit.Location = New System.Drawing.Point(4, 4)
+        Me.tabExit.Location = New System.Drawing.Point(8, 8)
+        Me.tabExit.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.tabExit.Name = "tabExit"
-        Me.tabExit.Size = New System.Drawing.Size(884, 0)
+        Me.tabExit.Size = New System.Drawing.Size(1768, 0)
         Me.tabExit.TabIndex = 5
         Me.tabExit.Text = "ออก"
         Me.tabExit.UseVisualStyleBackColor = True
@@ -187,7 +193,7 @@ Partial Class frmMoldInj
         'lblCmd
         '
         Me.lblCmd.Name = "lblCmd"
-        Me.lblCmd.Size = New System.Drawing.Size(13, 22)
+        Me.lblCmd.Size = New System.Drawing.Size(28, 45)
         Me.lblCmd.Text = "0"
         Me.lblCmd.Visible = False
         '
@@ -204,7 +210,7 @@ Partial Class frmMoldInj
         'lblHeight
         '
         Me.lblHeight.Name = "lblHeight"
-        Me.lblHeight.Size = New System.Drawing.Size(13, 22)
+        Me.lblHeight.Size = New System.Drawing.Size(28, 45)
         Me.lblHeight.Text = "0"
         Me.lblHeight.Visible = False
         '
@@ -237,18 +243,20 @@ Partial Class frmMoldInj
         Me.tabCmd.HotTrack = True
         Me.tabCmd.ImageList = Me.imgListTab1
         Me.tabCmd.Location = New System.Drawing.Point(0, 0)
+        Me.tabCmd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.tabCmd.Name = "tabCmd"
         Me.tabCmd.SelectedIndex = 0
-        Me.tabCmd.Size = New System.Drawing.Size(892, 27)
+        Me.tabCmd.Size = New System.Drawing.Size(1784, 52)
         Me.tabCmd.TabIndex = 16
         '
         'tabAdd
         '
         Me.tabAdd.ImageIndex = 3
-        Me.tabAdd.Location = New System.Drawing.Point(4, 4)
+        Me.tabAdd.Location = New System.Drawing.Point(8, 8)
+        Me.tabAdd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.tabAdd.Name = "tabAdd"
-        Me.tabAdd.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabAdd.Size = New System.Drawing.Size(884, 0)
+        Me.tabAdd.Padding = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.tabAdd.Size = New System.Drawing.Size(1768, 0)
         Me.tabAdd.TabIndex = 0
         Me.tabAdd.Text = "เพิ่ม"
         Me.tabAdd.UseVisualStyleBackColor = True
@@ -256,10 +264,11 @@ Partial Class frmMoldInj
         'tabEdit
         '
         Me.tabEdit.ImageIndex = 5
-        Me.tabEdit.Location = New System.Drawing.Point(4, 4)
+        Me.tabEdit.Location = New System.Drawing.Point(8, 8)
+        Me.tabEdit.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.tabEdit.Name = "tabEdit"
-        Me.tabEdit.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabEdit.Size = New System.Drawing.Size(884, 0)
+        Me.tabEdit.Padding = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.tabEdit.Size = New System.Drawing.Size(1768, 0)
         Me.tabEdit.TabIndex = 1
         Me.tabEdit.Text = "แก้ไข"
         Me.tabEdit.UseVisualStyleBackColor = True
@@ -267,9 +276,10 @@ Partial Class frmMoldInj
         'tabView
         '
         Me.tabView.ImageIndex = 6
-        Me.tabView.Location = New System.Drawing.Point(4, 4)
+        Me.tabView.Location = New System.Drawing.Point(8, 8)
+        Me.tabView.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.tabView.Name = "tabView"
-        Me.tabView.Size = New System.Drawing.Size(884, 0)
+        Me.tabView.Size = New System.Drawing.Size(1768, 0)
         Me.tabView.TabIndex = 7
         Me.tabView.Text = "มุมมอง"
         Me.tabView.UseVisualStyleBackColor = True
@@ -277,9 +287,10 @@ Partial Class frmMoldInj
         'tabPrint
         '
         Me.tabPrint.ImageIndex = 8
-        Me.tabPrint.Location = New System.Drawing.Point(4, 4)
+        Me.tabPrint.Location = New System.Drawing.Point(8, 8)
+        Me.tabPrint.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.tabPrint.Name = "tabPrint"
-        Me.tabPrint.Size = New System.Drawing.Size(884, 0)
+        Me.tabPrint.Size = New System.Drawing.Size(1768, 0)
         Me.tabPrint.TabIndex = 8
         Me.tabPrint.Text = "พิมพ์เอกสาร"
         Me.tabPrint.UseVisualStyleBackColor = True
@@ -287,9 +298,10 @@ Partial Class frmMoldInj
         'tabAllMold
         '
         Me.tabAllMold.ImageIndex = 8
-        Me.tabAllMold.Location = New System.Drawing.Point(4, 4)
+        Me.tabAllMold.Location = New System.Drawing.Point(8, 8)
+        Me.tabAllMold.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.tabAllMold.Name = "tabAllMold"
-        Me.tabAllMold.Size = New System.Drawing.Size(884, 0)
+        Me.tabAllMold.Size = New System.Drawing.Size(1768, 0)
         Me.tabAllMold.TabIndex = 10
         Me.tabAllMold.Text = "พิมพ์ Mold ทั้งหมด"
         Me.tabAllMold.UseVisualStyleBackColor = True
@@ -297,9 +309,10 @@ Partial Class frmMoldInj
         'tabRefesh
         '
         Me.tabRefesh.ImageIndex = 12
-        Me.tabRefesh.Location = New System.Drawing.Point(4, 4)
+        Me.tabRefesh.Location = New System.Drawing.Point(8, 8)
+        Me.tabRefesh.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.tabRefesh.Name = "tabRefesh"
-        Me.tabRefesh.Size = New System.Drawing.Size(884, 0)
+        Me.tabRefesh.Size = New System.Drawing.Size(1768, 0)
         Me.tabRefesh.TabIndex = 9
         Me.tabRefesh.Text = "ฟื้นฟูข้อมูล"
         Me.tabRefesh.UseVisualStyleBackColor = True
@@ -355,7 +368,8 @@ Partial Class frmMoldInj
         Me.dgvShoe.DefaultCellStyle = DataGridViewCellStyle15
         Me.dgvShoe.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgvShoe.GridColor = System.Drawing.Color.DarkGray
-        Me.dgvShoe.Location = New System.Drawing.Point(0, 73)
+        Me.dgvShoe.Location = New System.Drawing.Point(0, 141)
+        Me.dgvShoe.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.dgvShoe.MultiSelect = False
         Me.dgvShoe.Name = "dgvShoe"
         Me.dgvShoe.ReadOnly = True
@@ -370,7 +384,7 @@ Partial Class frmMoldInj
         Me.dgvShoe.RowHeadersVisible = False
         Me.dgvShoe.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.dgvShoe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvShoe.Size = New System.Drawing.Size(892, 461)
+        Me.dgvShoe.Size = New System.Drawing.Size(1784, 886)
         Me.dgvShoe.TabIndex = 38
         '
         'Column6
@@ -503,29 +517,30 @@ Partial Class frmMoldInj
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 25)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 48)
         '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.SteelBlue
         Me.Panel3.Controls.Add(Me.tabCmd)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(0, 45)
+        Me.Panel3.Location = New System.Drawing.Point(0, 87)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(892, 28)
+        Me.Panel3.Size = New System.Drawing.Size(1784, 54)
         Me.Panel3.TabIndex = 37
         '
         'lblWidth
         '
         Me.lblWidth.Name = "lblWidth"
-        Me.lblWidth.Size = New System.Drawing.Size(13, 22)
+        Me.lblWidth.Size = New System.Drawing.Size(28, 45)
         Me.lblWidth.Text = "0"
         Me.lblWidth.Visible = False
         '
         'lblTop
         '
         Me.lblTop.Name = "lblTop"
-        Me.lblTop.Size = New System.Drawing.Size(13, 22)
+        Me.lblTop.Size = New System.Drawing.Size(28, 45)
         Me.lblTop.Text = "0"
         Me.lblTop.Visible = False
         '
@@ -534,13 +549,13 @@ Partial Class frmMoldInj
         Me.lblPageAll.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lblPageAll.Name = "lblPageAll"
         Me.lblPageAll.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblPageAll.Size = New System.Drawing.Size(18, 22)
+        Me.lblPageAll.Size = New System.Drawing.Size(37, 45)
         Me.lblPageAll.Text = "/1"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 25)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 48)
         '
         'Column9
         '
@@ -557,14 +572,14 @@ Partial Class frmMoldInj
         Me.txtPage.ForeColor = System.Drawing.Color.Red
         Me.txtPage.Name = "txtPage"
         Me.txtPage.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txtPage.Size = New System.Drawing.Size(70, 25)
+        Me.txtPage.Size = New System.Drawing.Size(138, 48)
         Me.txtPage.Text = "1"
         Me.txtPage.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'lblLeft
         '
         Me.lblLeft.Name = "lblLeft"
-        Me.lblLeft.Size = New System.Drawing.Size(13, 22)
+        Me.lblLeft.Size = New System.Drawing.Size(28, 45)
         Me.lblLeft.Text = "0"
         Me.lblLeft.Visible = False
         '
@@ -572,13 +587,13 @@ Partial Class frmMoldInj
         '
         Me.ToolStripLabel1.Name = "ToolStripLabel1"
         Me.ToolStripLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.ToolStripLabel1.Size = New System.Drawing.Size(40, 22)
+        Me.ToolStripLabel1.Size = New System.Drawing.Size(80, 45)
         Me.ToolStripLabel1.Text = "หน้าที่ :"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 25)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 48)
         '
         'Column8
         '
@@ -592,11 +607,13 @@ Partial Class frmMoldInj
         'tlsBarFmr
         '
         Me.tlsBarFmr.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tlsBarFmr.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.tlsBarFmr.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnLast, Me.btnNext, Me.ToolStripSeparator1, Me.lblPage, Me.lblPageAll, Me.txtPage, Me.ToolStripLabel1, Me.ToolStripSeparator2, Me.btnPre, Me.btnFirst, Me.ToolStripSeparator3, Me.lblCmd, Me.lblHeight, Me.lblWidth, Me.lblTop, Me.lblLeft})
         Me.tlsBarFmr.Location = New System.Drawing.Point(0, 0)
         Me.tlsBarFmr.Name = "tlsBarFmr"
+        Me.tlsBarFmr.Padding = New System.Windows.Forms.Padding(0, 0, 2, 0)
         Me.tlsBarFmr.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.tlsBarFmr.Size = New System.Drawing.Size(892, 25)
+        Me.tlsBarFmr.Size = New System.Drawing.Size(1784, 48)
         Me.tlsBarFmr.TabIndex = 18
         Me.tlsBarFmr.Text = "Nevigator"
         '
@@ -607,7 +624,7 @@ Partial Class frmMoldInj
         Me.btnLast.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnLast.Name = "btnLast"
         Me.btnLast.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.btnLast.Size = New System.Drawing.Size(23, 22)
+        Me.btnLast.Size = New System.Drawing.Size(36, 45)
         Me.btnLast.Text = "ไปที่หน้าสุดท้าย"
         '
         'btnNext
@@ -617,7 +634,7 @@ Partial Class frmMoldInj
         Me.btnNext.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnNext.Name = "btnNext"
         Me.btnNext.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.btnNext.Size = New System.Drawing.Size(23, 22)
+        Me.btnNext.Size = New System.Drawing.Size(36, 45)
         Me.btnNext.Text = "หน้าถัดไป"
         '
         'btnPre
@@ -627,7 +644,7 @@ Partial Class frmMoldInj
         Me.btnPre.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnPre.Name = "btnPre"
         Me.btnPre.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.btnPre.Size = New System.Drawing.Size(23, 22)
+        Me.btnPre.Size = New System.Drawing.Size(36, 45)
         Me.btnPre.Text = "ก่อนหน้านี้"
         '
         'btnFirst
@@ -637,7 +654,7 @@ Partial Class frmMoldInj
         Me.btnFirst.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnFirst.Name = "btnFirst"
         Me.btnFirst.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.btnFirst.Size = New System.Drawing.Size(23, 22)
+        Me.btnFirst.Size = New System.Drawing.Size(36, 45)
         Me.btnFirst.Text = "หน้าแรกสุด"
         '
         'Column10
@@ -654,9 +671,10 @@ Partial Class frmMoldInj
         Me.Panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Panel1.Controls.Add(Me.tlsBarFmr)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 534)
+        Me.Panel1.Location = New System.Drawing.Point(0, 1027)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(892, 25)
+        Me.Panel1.Size = New System.Drawing.Size(1784, 48)
         Me.Panel1.TabIndex = 36
         '
         'gpbSearch
@@ -668,9 +686,11 @@ Partial Class frmMoldInj
         Me.gpbSearch.Controls.Add(Me.txtSeek)
         Me.gpbSearch.Font = New System.Drawing.Font("Cordia New", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.gpbSearch.ForeColor = System.Drawing.Color.White
-        Me.gpbSearch.Location = New System.Drawing.Point(71, 208)
+        Me.gpbSearch.Location = New System.Drawing.Point(142, 400)
+        Me.gpbSearch.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.gpbSearch.Name = "gpbSearch"
-        Me.gpbSearch.Size = New System.Drawing.Size(348, 125)
+        Me.gpbSearch.Padding = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.gpbSearch.Size = New System.Drawing.Size(696, 240)
         Me.gpbSearch.TabIndex = 39
         Me.gpbSearch.TabStop = False
         Me.gpbSearch.Text = "ค้นหาข้อมูล"
@@ -682,9 +702,10 @@ Partial Class frmMoldInj
         Me.cmbType.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.cmbType.ForeColor = System.Drawing.Color.Indigo
         Me.cmbType.FormattingEnabled = True
-        Me.cmbType.Location = New System.Drawing.Point(14, 35)
+        Me.cmbType.Location = New System.Drawing.Point(28, 67)
+        Me.cmbType.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.cmbType.Name = "cmbType"
-        Me.cmbType.Size = New System.Drawing.Size(154, 32)
+        Me.cmbType.Size = New System.Drawing.Size(304, 52)
         Me.cmbType.TabIndex = 52
         '
         'btnCancel
@@ -692,9 +713,10 @@ Partial Class frmMoldInj
         Me.btnCancel.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnCancel.ForeColor = System.Drawing.Color.Black
-        Me.btnCancel.Location = New System.Drawing.Point(239, 83)
+        Me.btnCancel.Location = New System.Drawing.Point(478, 160)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(76, 30)
+        Me.btnCancel.Size = New System.Drawing.Size(152, 58)
         Me.btnCancel.TabIndex = 51
         Me.btnCancel.Text = "ยกเลิก"
         Me.btnCancel.UseVisualStyleBackColor = False
@@ -704,9 +726,10 @@ Partial Class frmMoldInj
         Me.btnOk.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.btnOk.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnOk.ForeColor = System.Drawing.Color.Black
-        Me.btnOk.Location = New System.Drawing.Point(158, 83)
+        Me.btnOk.Location = New System.Drawing.Point(316, 160)
+        Me.btnOk.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnOk.Name = "btnOk"
-        Me.btnOk.Size = New System.Drawing.Size(76, 30)
+        Me.btnOk.Size = New System.Drawing.Size(152, 58)
         Me.btnOk.TabIndex = 50
         Me.btnOk.Text = "ตกลง"
         Me.btnOk.UseVisualStyleBackColor = False
@@ -715,10 +738,11 @@ Partial Class frmMoldInj
         '
         Me.txtSeek.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtSeek.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.txtSeek.Location = New System.Drawing.Point(168, 36)
+        Me.txtSeek.Location = New System.Drawing.Point(336, 69)
+        Me.txtSeek.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtSeek.MaxLength = 25
         Me.txtSeek.Name = "txtSeek"
-        Me.txtSeek.Size = New System.Drawing.Size(150, 29)
+        Me.txtSeek.Size = New System.Drawing.Size(296, 51)
         Me.txtSeek.TabIndex = 49
         Me.txtSeek.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -731,9 +755,11 @@ Partial Class frmMoldInj
         Me.gpbFilter.Controls.Add(Me.txtFilter)
         Me.gpbFilter.Font = New System.Drawing.Font("Cordia New", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.gpbFilter.ForeColor = System.Drawing.Color.White
-        Me.gpbFilter.Location = New System.Drawing.Point(425, 208)
+        Me.gpbFilter.Location = New System.Drawing.Point(850, 400)
+        Me.gpbFilter.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.gpbFilter.Name = "gpbFilter"
-        Me.gpbFilter.Size = New System.Drawing.Size(348, 125)
+        Me.gpbFilter.Padding = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.gpbFilter.Size = New System.Drawing.Size(696, 240)
         Me.gpbFilter.TabIndex = 40
         Me.gpbFilter.TabStop = False
         Me.gpbFilter.Text = "กรองข้อมูล"
@@ -745,9 +771,10 @@ Partial Class frmMoldInj
         Me.cmbFilter.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.cmbFilter.ForeColor = System.Drawing.Color.Black
         Me.cmbFilter.FormattingEnabled = True
-        Me.cmbFilter.Location = New System.Drawing.Point(11, 35)
+        Me.cmbFilter.Location = New System.Drawing.Point(22, 67)
+        Me.cmbFilter.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.cmbFilter.Name = "cmbFilter"
-        Me.cmbFilter.Size = New System.Drawing.Size(155, 32)
+        Me.cmbFilter.Size = New System.Drawing.Size(306, 52)
         Me.cmbFilter.TabIndex = 52
         '
         'btnFilterCancel
@@ -755,9 +782,10 @@ Partial Class frmMoldInj
         Me.btnFilterCancel.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.btnFilterCancel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnFilterCancel.ForeColor = System.Drawing.Color.Black
-        Me.btnFilterCancel.Location = New System.Drawing.Point(241, 83)
+        Me.btnFilterCancel.Location = New System.Drawing.Point(482, 160)
+        Me.btnFilterCancel.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnFilterCancel.Name = "btnFilterCancel"
-        Me.btnFilterCancel.Size = New System.Drawing.Size(76, 30)
+        Me.btnFilterCancel.Size = New System.Drawing.Size(152, 58)
         Me.btnFilterCancel.TabIndex = 51
         Me.btnFilterCancel.Text = "ยกเลิก"
         Me.btnFilterCancel.UseVisualStyleBackColor = False
@@ -767,9 +795,10 @@ Partial Class frmMoldInj
         Me.btnFilter.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.btnFilter.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnFilter.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnFilter.Location = New System.Drawing.Point(160, 83)
+        Me.btnFilter.Location = New System.Drawing.Point(320, 160)
+        Me.btnFilter.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnFilter.Name = "btnFilter"
-        Me.btnFilter.Size = New System.Drawing.Size(76, 30)
+        Me.btnFilter.Size = New System.Drawing.Size(152, 58)
         Me.btnFilter.TabIndex = 50
         Me.btnFilter.Text = "ตกลง"
         Me.btnFilter.UseVisualStyleBackColor = False
@@ -778,10 +807,11 @@ Partial Class frmMoldInj
         '
         Me.txtFilter.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtFilter.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.txtFilter.Location = New System.Drawing.Point(166, 36)
+        Me.txtFilter.Location = New System.Drawing.Point(332, 69)
+        Me.txtFilter.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtFilter.MaxLength = 25
         Me.txtFilter.Name = "txtFilter"
-        Me.txtFilter.Size = New System.Drawing.Size(150, 29)
+        Me.txtFilter.Size = New System.Drawing.Size(296, 51)
         Me.txtFilter.TabIndex = 49
         Me.txtFilter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -795,9 +825,9 @@ Partial Class frmMoldInj
         '
         'frmMoldInj
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(892, 559)
+        Me.ClientSize = New System.Drawing.Size(1784, 1075)
         Me.Controls.Add(Me.gpbFilter)
         Me.Controls.Add(Me.gpbSearch)
         Me.Controls.Add(Me.dgvShoe)
@@ -805,6 +835,7 @@ Partial Class frmMoldInj
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.Name = "frmMoldInj"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "แฟ้มข้อมูลอุปกรณ์โมล์ดฉีด,พ่น,หยอด"

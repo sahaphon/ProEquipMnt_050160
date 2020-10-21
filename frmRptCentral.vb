@@ -33,75 +33,195 @@ Private Sub frmRptCentral_FormClosed(ByVal sender As Object, ByVal e As System.W
     Me.Dispose()
 End Sub
 
-Private Sub frmRptCentral_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub frmRptCentral_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
- Me.WindowState = FormWindowState.Maximized
- StdDateTimeThai()
- Me.Cursor = System.Windows.Forms.Cursors.Arrow
-     strUser = frmMainPro.lblLogin.Text.Trim.ToString 'ใช้ User
+        Me.WindowState = FormWindowState.Maximized
+        StdDateTimeThai()
+        Me.Cursor = System.Windows.Forms.Cursors.Arrow
+        strUser = frmMainPro.lblLogin.Text.Trim.ToString 'ใช้ User
 
-     With frmMainPro
+        With frmMainPro
 
-          strDataReport = .lblRptDesc.Text.ToString.Trim
-          Select Case .lblRptCentral.Text
+            strDataReport = .lblRptDesc.Text.ToString.Trim
+            Select Case .lblRptCentral.Text
 
-                      Case Is = "A" 'ใบตรวจสอบอุปกรณ์
+                Case Is = "A" 'ใบตรวจสอบอุปกรณ์
 
-                                  CRviewer.ShowPrintButton = True
-                                  btnPrint.Visible = False
-                                  InputMoldInjData()
+                    CRviewer.ShowPrintButton = True
+                    btnPrint.Visible = False
+                    InputMoldInjData()
 
-                      Case Is = "B" 'ใบโอนอุปกรณ์
-                                  CRviewer.ShowPrintButton = False
-                                  btnPrint.Visible = True
-                                  InputBillDeliverData()
+                Case Is = "B" 'ใบโอนอุปกรณ์
+                    CRviewer.ShowPrintButton = False
+                    btnPrint.Visible = True
+                    InputBillDeliverData()
 
-                      Case Is = "C" 'โมลด์อัดลาย
-                                  CRviewer.ShowPrintButton = True
-                                  btnPrint.Visible = False
-                                  InputEqpSheetmoldData()
+                Case Is = "C" 'โมลด์อัดลาย
+                    CRviewer.ShowPrintButton = True
+                    btnPrint.Visible = False
+                    InputEqpSheetmoldData()
 
-                      Case Is = "D" 'รายงานบล็อคสกรีน
-                                  CRviewer.ShowPrintButton = True
-                                  btnPrint.Visible = False
-                                  InputBlockScreenData()
+                Case Is = "D" 'รายงานบล็อคสกรีน
+                    CRviewer.ShowPrintButton = True
+                    btnPrint.Visible = False
+                    InputBlockScreenData()
 
-                      Case Is = "E" 'รายงานบล็อคอาร์ค
-                                  CRviewer.ShowPrintButton = True
-                                  btnPrint.Visible = False
-                                  InputBlockArkData()
+                Case Is = "E" 'รายงานบล็อคอาร์ค
+                    CRviewer.ShowPrintButton = True
+                    btnPrint.Visible = False
+                    InputBlockArkData()
 
-                      Case Is = "F"  'รายงานส่งซ่อมอุปกรณ์
-                                  CRviewer.ShowPrintButton = True
-                                  btnPrint.Visible = False
-                                  inputFixEqpData()
+                Case Is = "F"  'รายงานส่งซ่อมอุปกรณ์
+                    CRviewer.ShowPrintButton = True
+                    btnPrint.Visible = False
+                    inputFixEqpData()
 
-                      Case Is = "G"  'รายงานรับกลับส่งซ่อมอุปกรณ์
-                                  CRviewer.ShowPrintButton = True
-                                  btnPrint.Visible = False
-                                  inputRecvFixEqp()
+                Case Is = "G"  'รายงานรับกลับส่งซ่อมอุปกรณ์
+                    CRviewer.ShowPrintButton = True
+                    btnPrint.Visible = False
+                    inputRecvFixEqp()
 
-                      Case Is = "H"  'รายงานส่งซ่อม - รับกลับส่งซ่อม
-                                  CRviewer.ShowPrintButton = True
-                                  btnPrint.Visible = False
-                                  FixAndRecv()
+                Case Is = "H"  'รายงานส่งซ่อม - รับกลับส่งซ่อม
+                    CRviewer.ShowPrintButton = True
+                    btnPrint.Visible = False
+                    FixAndRecv()
 
-                      Case Is = "I" 'รายการ Mold ทั้งหมด
-                                  CRviewer.ShowPrintButton = True
-                                  btnPrint.Visible = False
-                                  PrintAllMold()
+                Case Is = "I" 'รายการ Mold ทั้งหมด
+                    CRviewer.ShowPrintButton = True
+                    btnPrint.Visible = False
+                    PrintAllMold()
 
-                     Case Is = "J" 'รายการ Mold อัดลาย
-                                  CRviewer.ShowPrintButton = True
-                                  btnPrint.Visible = False
-                                  PrintEqpMold()
+                Case Is = "J" 'รายการ Mold อัดลาย
+                    CRviewer.ShowPrintButton = True
+                    btnPrint.Visible = False
+                    PrintEqpMold()
+
+                Case Is = "K" 'รายงานโมล์ดทั้งหมด คุณชลินทร์
+                    CRviewer.ShowPrintButton = True
+                    btnPrint.Visible = False
+                    PrepairReport()
+
             End Select
 
         End With
 
-End Sub
+    End Sub
 
-Private Sub InputMoldInjData()
+    Sub PrepairReport()
+        Dim Conn As New ADODB.Connection
+        Dim RsdDvl As New ADODB.Recordset
+        Dim strSqlCmdSelc As String
+
+        Dim da As New System.Data.OleDb.OleDbDataAdapter
+        Dim ds As New DataSet
+
+        With Conn
+
+            If .State Then .Close()
+            .ConnectionString = strConnAdodb
+            .CursorLocation = ADODB.CursorLocationEnum.adUseClient
+            .ConnectionTimeout = 90
+            .CommandTimeout = 30
+            .Open()
+
+        End With
+
+        strSqlCmdSelc = "SELECT * FROM v_molds (NOLOCK) ORDER BY moldtype, eqp_id"
+
+        RsdDvl = New ADODB.Recordset
+
+        With RsdDvl
+
+            .CursorType = ADODB.CursorTypeEnum.adOpenKeyset
+            .LockType = ADODB.LockTypeEnum.adLockOptimistic
+            .Open(strSqlCmdSelc, Conn, , , )
+
+            If .RecordCount <> 0 Then
+
+                ds.Clear()
+                da.Fill(ds, RsdDvl, "qty_cd")
+
+                cryRpt.Load(Application.StartupPath & "\rptMolds.rpt")
+                cryRpt.SetDatabaseLogon("Sa", "Sa2008", "ADDASRV03", "DBequipmnt")
+                cryRpt.ReportOptions.EnableSaveDataWithReport = False
+                cryRpt.SetDataSource(ds.Tables("qty_cd"))
+
+                'Dim cryTextDoc As CrystalDecisions.CrystalReports.Engine.TextObject
+                Dim cryTxtUsr As CrystalDecisions.CrystalReports.Engine.TextObject
+
+                'cryTextDoc = cryRpt.ReportDefinition.Sections(0).ReportObjects("cryTxtDoc")
+                cryTxtUsr = cryRpt.ReportDefinition.Sections(1).ReportObjects("cryuser")
+
+                'cryTextDoc.Text = strDataReportEx
+                cryTxtUsr.Text = strUser
+
+                '------------------------------ กำหนดขนาดกระดาษเองโดยตั้งขนาดที่เครื่อง Client ก่อน ---------------------------------------
+
+                Dim printDoc As New System.Drawing.Printing.PrintDocument
+                Dim pkSize As PaperSize
+
+                Dim strNewPaper As String = "FolderControl_20x14" 'ขนาดจริงคือ 20.40x14.00 cm ใช้หน่วย Mertric 
+                'Dim strNewPaper As String = "PaperTest"
+
+                Dim sngPaperW As Single = 204 'ซม.
+                Dim sngPaperH As Single = 140 'ซม.
+
+                Dim strFindNewPaper As String
+
+                Dim i As Integer
+                Dim x As Byte
+
+                For i = 0 To printDoc.PrinterSettings.PaperSizes.Count - 1
+
+                    strFindNewPaper = printDoc.PrinterSettings.PaperSizes.Item(i).PaperName
+                    If strNewPaper = strFindNewPaper Then
+                        pkSize = printDoc.PrinterSettings.PaperSizes.Item(i).RawKind
+                        x = 1
+                        Exit For
+                    End If
+
+                Next i
+
+
+                If x = 1 Then
+                    cryRpt.PrintOptions.PaperSize = CType(pkSize, CrystalDecisions.Shared.PaperSize)
+                Else
+                    cryRpt.PrintOptions.PaperSize = PaperSize.PaperA4
+                End If
+
+                CRviewer.ReportSource = cryRpt
+                CRviewer.DisplayStatusBar = True
+                CRviewer.Refresh()
+                CRviewer.Zoom(100)
+
+            Else
+
+                MsgBox("ไม่มีข้อมูลที่คุณต้องการค้นหา_2!!" & vbNewLine _
+                          & "โปรดปิดหน้าจอนี้ แล้วเลือกพิมพ์ใหม่!!!", MsgBoxStyle.OkOnly + MsgBoxStyle.Critical, "Data Empty!!")
+
+            End If
+
+            .ActiveConnection = Nothing
+            ' .Close()
+
+        End With
+        RsdDvl = Nothing
+
+        ds.Clear()
+        ds.Dispose()
+
+        da.Dispose()
+
+        ds = Nothing
+        da = Nothing
+
+
+        Conn.Close()
+        Conn = Nothing
+
+    End Sub
+
+    Private Sub InputMoldInjData()
 
 Dim Conn As New ADODB.Connection
 Dim Rsd As New ADODB.Recordset

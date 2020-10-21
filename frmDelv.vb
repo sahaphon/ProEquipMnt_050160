@@ -1348,10 +1348,10 @@ Private Sub btnPrntPrevw_Click(ByVal sender As System.Object, ByVal e As System.
      frmMainPro.lblRptCentral.Text = "B"
      frmMainPro.lblRptDesc.Text = strDocId
 
-     frmRptDelvApprove.Show()
-     'frmRptAccept.Show()  ' แสดง frmRptCentral()
+            'frmRptDelvApprove.Show()
+            'frmRptAccept.Show()  ' แสดง frmRptCentral()
 
-     StateLockFind(True)
+            StateLockFind(True)
      gpbOptPrint.Visible = False
      frmMainPro.Hide()
 

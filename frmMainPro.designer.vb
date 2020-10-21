@@ -30,7 +30,7 @@ Partial Class frmMainPro
         Me.mnNewLogIn = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnChangePass = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnRpt = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnRptdvl = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnRptMold = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnAsswin = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnTileHor = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnVer = New System.Windows.Forms.ToolStripMenuItem()
@@ -66,7 +66,8 @@ Partial Class frmMainPro
         Me.mnStpMain.Location = New System.Drawing.Point(0, 0)
         Me.mnStpMain.MdiWindowListItem = Me.mnAsswin
         Me.mnStpMain.Name = "mnStpMain"
-        Me.mnStpMain.Size = New System.Drawing.Size(632, 40)
+        Me.mnStpMain.Padding = New System.Windows.Forms.Padding(12, 4, 0, 4)
+        Me.mnStpMain.Size = New System.Drawing.Size(1264, 44)
         Me.mnStpMain.TabIndex = 1
         Me.mnStpMain.Text = "Main Menu"
         '
@@ -76,28 +77,28 @@ Partial Class frmMainPro
         Me.mnFileSys.ForeColor = System.Drawing.Color.Black
         Me.mnFileSys.Image = Global.ProEquipMnt.My.Resources.Resources.Registration
         Me.mnFileSys.Name = "mnFileSys"
-        Me.mnFileSys.Size = New System.Drawing.Size(149, 36)
+        Me.mnFileSys.Size = New System.Drawing.Size(256, 36)
         Me.mnFileSys.Text = "A&dmin File System"
         '
         'mnDocFile
         '
         Me.mnDocFile.Image = Global.ProEquipMnt.My.Resources.Resources.folder_30px
         Me.mnDocFile.Name = "mnDocFile"
-        Me.mnDocFile.Size = New System.Drawing.Size(176, 22)
+        Me.mnDocFile.Size = New System.Drawing.Size(316, 38)
         Me.mnDocFile.Text = "แฟ้มระบบงาน..."
         '
         'mnUsrFile
         '
         Me.mnUsrFile.Image = Global.ProEquipMnt.My.Resources.Resources.users_30px
         Me.mnUsrFile.Name = "mnUsrFile"
-        Me.mnUsrFile.Size = New System.Drawing.Size(176, 22)
+        Me.mnUsrFile.Size = New System.Drawing.Size(316, 38)
         Me.mnUsrFile.Text = "แฟ้มข้อมูลผู้ใช้งาน..."
         '
         'mnWipnewImport
         '
         Me.mnWipnewImport.Image = Global.ProEquipMnt.My.Resources.Resources.Downloads_30px
         Me.mnWipnewImport.Name = "mnWipnewImport"
-        Me.mnWipnewImport.Size = New System.Drawing.Size(176, 22)
+        Me.mnWipnewImport.Size = New System.Drawing.Size(316, 38)
         Me.mnWipnewImport.Text = "นำเข้าข้อมูล Wipnew"
         '
         'mnReLogIn
@@ -106,35 +107,35 @@ Partial Class frmMainPro
         Me.mnReLogIn.ForeColor = System.Drawing.Color.Black
         Me.mnReLogIn.Image = Global.ProEquipMnt.My.Resources.Resources.Web_designer
         Me.mnReLogIn.Name = "mnReLogIn"
-        Me.mnReLogIn.Size = New System.Drawing.Size(89, 36)
+        Me.mnReLogIn.Size = New System.Drawing.Size(130, 36)
         Me.mnReLogIn.Text = "ผู้ใ&ช้งาน"
         '
         'mnNewLogIn
         '
         Me.mnNewLogIn.Name = "mnNewLogIn"
-        Me.mnNewLogIn.Size = New System.Drawing.Size(194, 22)
+        Me.mnNewLogIn.Size = New System.Drawing.Size(338, 38)
         Me.mnNewLogIn.Text = "ล็อคอินเข้าใช้งานใหม่"
         '
         'mnChangePass
         '
         Me.mnChangePass.Name = "mnChangePass"
-        Me.mnChangePass.Size = New System.Drawing.Size(194, 22)
+        Me.mnChangePass.Size = New System.Drawing.Size(338, 38)
         Me.mnChangePass.Text = "เปลี่ยนรหัสผ่านเข้าใช้งาน"
         '
         'mnRpt
         '
-        Me.mnRpt.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnRptdvl})
+        Me.mnRpt.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnRptMold})
         Me.mnRpt.ForeColor = System.Drawing.Color.Black
         Me.mnRpt.Image = Global.ProEquipMnt.My.Resources.Resources.Script
         Me.mnRpt.Name = "mnRpt"
-        Me.mnRpt.Size = New System.Drawing.Size(87, 36)
+        Me.mnRpt.Size = New System.Drawing.Size(127, 36)
         Me.mnRpt.Text = "รายง&าน"
         '
-        'mnRptdvl
+        'mnRptMold
         '
-        Me.mnRptdvl.Name = "mnRptdvl"
-        Me.mnRptdvl.Size = New System.Drawing.Size(213, 22)
-        Me.mnRptdvl.Text = "รายงานการโอนอุปกรณ์ลงผลิต"
+        Me.mnRptMold.Name = "mnRptMold"
+        Me.mnRptMold.Size = New System.Drawing.Size(281, 38)
+        Me.mnRptMold.Text = "รายงานข้อมูลโมล์ด"
         '
         'mnAsswin
         '
@@ -142,25 +143,25 @@ Partial Class frmMainPro
         Me.mnAsswin.ForeColor = System.Drawing.Color.Black
         Me.mnAsswin.Image = Global.ProEquipMnt.My.Resources.Resources.Flip
         Me.mnAsswin.Name = "mnAsswin"
-        Me.mnAsswin.Size = New System.Drawing.Size(88, 36)
+        Me.mnAsswin.Size = New System.Drawing.Size(132, 36)
         Me.mnAsswin.Text = "หน้า&ต่าง"
         '
         'mnTileHor
         '
         Me.mnTileHor.Name = "mnTileHor"
-        Me.mnTileHor.Size = New System.Drawing.Size(163, 22)
+        Me.mnTileHor.Size = New System.Drawing.Size(272, 38)
         Me.mnTileHor.Text = "เรียงแบบแนวนอน"
         '
         'mnVer
         '
         Me.mnVer.Name = "mnVer"
-        Me.mnVer.Size = New System.Drawing.Size(163, 22)
+        Me.mnVer.Size = New System.Drawing.Size(272, 38)
         Me.mnVer.Text = "เรียงแบบแนวตั้ง"
         '
         'mnCasd
         '
         Me.mnCasd.Name = "mnCasd"
-        Me.mnCasd.Size = New System.Drawing.Size(163, 22)
+        Me.mnCasd.Size = New System.Drawing.Size(272, 38)
         Me.mnCasd.Text = "เรียงแบบลำดับชั้น"
         '
         'mnExit
@@ -168,100 +169,103 @@ Partial Class frmMainPro
         Me.mnExit.ForeColor = System.Drawing.Color.Black
         Me.mnExit.Image = Global.ProEquipMnt.My.Resources.Resources.exit_winxp1
         Me.mnExit.Name = "mnExit"
-        Me.mnExit.Size = New System.Drawing.Size(111, 36)
+        Me.mnExit.Size = New System.Drawing.Size(166, 36)
         Me.mnExit.Text = "&ปิดโปรแกรม"
         '
         'StatusStrip
         '
         Me.StatusStrip.BackColor = System.Drawing.Color.Silver
+        Me.StatusStrip.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.StatusStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lblIcon, Me.lblLogin, Me.lblSpace1, Me.lblUsrName, Me.lblSpace2, Me.lblIp, Me.lblSpace3, Me.lblCurrentDate, Me.lblSpace4, Me.lblCurrentTime, Me.lblRptCentral, Me.lblRptDesc})
-        Me.StatusStrip.Location = New System.Drawing.Point(0, 431)
+        Me.StatusStrip.Location = New System.Drawing.Point(0, 834)
         Me.StatusStrip.Name = "StatusStrip"
-        Me.StatusStrip.Size = New System.Drawing.Size(632, 22)
+        Me.StatusStrip.Padding = New System.Windows.Forms.Padding(2, 0, 28, 0)
+        Me.StatusStrip.Size = New System.Drawing.Size(1264, 37)
         Me.StatusStrip.TabIndex = 3
         '
         'lblIcon
         '
         Me.lblIcon.Image = Global.ProEquipMnt.My.Resources.Resources.admin
         Me.lblIcon.Name = "lblIcon"
-        Me.lblIcon.Size = New System.Drawing.Size(85, 17)
+        Me.lblIcon.Size = New System.Drawing.Size(172, 32)
         Me.lblIcon.Text = "User LogIn :"
         '
         'lblLogin
         '
         Me.lblLogin.Name = "lblLogin"
-        Me.lblLogin.Size = New System.Drawing.Size(21, 17)
+        Me.lblLogin.Size = New System.Drawing.Size(43, 32)
         Me.lblLogin.Text = "SA"
         '
         'lblSpace1
         '
         Me.lblSpace1.Name = "lblSpace1"
-        Me.lblSpace1.Size = New System.Drawing.Size(22, 17)
+        Me.lblSpace1.Size = New System.Drawing.Size(50, 32)
         Me.lblSpace1.Text = "     "
         '
         'lblUsrName
         '
         Me.lblUsrName.Image = Global.ProEquipMnt.My.Resources.Resources.users
         Me.lblUsrName.Name = "lblUsrName"
-        Me.lblUsrName.Size = New System.Drawing.Size(68, 17)
+        Me.lblUsrName.Size = New System.Drawing.Size(146, 32)
         Me.lblUsrName.Text = "xxxxxxxxx"
         '
         'lblSpace2
         '
         Me.lblSpace2.Name = "lblSpace2"
-        Me.lblSpace2.Size = New System.Drawing.Size(22, 17)
+        Me.lblSpace2.Size = New System.Drawing.Size(50, 32)
         Me.lblSpace2.Text = "     "
         '
         'lblIp
         '
         Me.lblIp.Image = Global.ProEquipMnt.My.Resources.Resources.laptop1
         Me.lblIp.Name = "lblIp"
-        Me.lblIp.Size = New System.Drawing.Size(72, 17)
+        Me.lblIp.Size = New System.Drawing.Size(150, 32)
         Me.lblIp.Text = "xx.xx.xx.xx"
         '
         'lblSpace3
         '
         Me.lblSpace3.Name = "lblSpace3"
-        Me.lblSpace3.Size = New System.Drawing.Size(22, 17)
+        Me.lblSpace3.Size = New System.Drawing.Size(50, 32)
         Me.lblSpace3.Text = "     "
         '
         'lblCurrentDate
         '
         Me.lblCurrentDate.Image = Global.ProEquipMnt.My.Resources.Resources._date
         Me.lblCurrentDate.Name = "lblCurrentDate"
-        Me.lblCurrentDate.Size = New System.Drawing.Size(93, 17)
+        Me.lblCurrentDate.Size = New System.Drawing.Size(183, 32)
         Me.lblCurrentDate.Text = "dd/mm/yyyy"
         '
         'lblSpace4
         '
         Me.lblSpace4.Name = "lblSpace4"
-        Me.lblSpace4.Size = New System.Drawing.Size(22, 17)
+        Me.lblSpace4.Size = New System.Drawing.Size(50, 32)
         Me.lblSpace4.Text = "     "
         '
         'lblCurrentTime
         '
         Me.lblCurrentTime.Image = Global.ProEquipMnt.My.Resources.Resources.time
         Me.lblCurrentTime.Name = "lblCurrentTime"
-        Me.lblCurrentTime.Size = New System.Drawing.Size(75, 17)
+        Me.lblCurrentTime.Size = New System.Drawing.Size(147, 32)
         Me.lblCurrentTime.Text = "hh:mm:ss"
         '
         'lblRptCentral
         '
         Me.lblRptCentral.Name = "lblRptCentral"
-        Me.lblRptCentral.Size = New System.Drawing.Size(0, 17)
+        Me.lblRptCentral.Size = New System.Drawing.Size(0, 32)
         '
         'lblRptDesc
         '
         Me.lblRptDesc.Name = "lblRptDesc"
-        Me.lblRptDesc.Size = New System.Drawing.Size(0, 17)
+        Me.lblRptDesc.Size = New System.Drawing.Size(0, 32)
         '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.lstBarMain)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(0, 40)
+        Me.Panel1.Location = New System.Drawing.Point(0, 44)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(6)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(84, 391)
+        Me.Panel1.Size = New System.Drawing.Size(168, 790)
         Me.Panel1.TabIndex = 5
         '
         'lstBarMain
@@ -274,9 +278,10 @@ Partial Class frmMainPro
         Me.lstBarMain.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.lstBarMain.LargeImageList = Me.ImageList1
         Me.lstBarMain.Location = New System.Drawing.Point(0, 0)
+        Me.lstBarMain.Margin = New System.Windows.Forms.Padding(6)
         Me.lstBarMain.Name = "lstBarMain"
         Me.lstBarMain.SelectOnMouseDown = False
-        Me.lstBarMain.Size = New System.Drawing.Size(84, 391)
+        Me.lstBarMain.Size = New System.Drawing.Size(168, 790)
         Me.lstBarMain.SmallImageList = Me.ImageList1
         Me.lstBarMain.TabIndex = 6
         Me.lstBarMain.ToolTip = Nothing
@@ -314,11 +319,11 @@ Partial Class frmMainPro
         '
         'frmMainPro
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.ClientSize = New System.Drawing.Size(632, 453)
+        Me.ClientSize = New System.Drawing.Size(1264, 871)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.StatusStrip)
         Me.Controls.Add(Me.mnStpMain)
@@ -326,6 +331,7 @@ Partial Class frmMainPro
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.mnStpMain
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "frmMainPro"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "โปรแกรมบันทึกเครื่องมืออุปกรณ์การผลิต (Production Equipments)"
@@ -367,8 +373,7 @@ Partial Class frmMainPro
     Friend WithEvents ImageList1 As System.Windows.Forms.ImageList
     Friend WithEvents lblRptCentral As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents lblRptDesc As System.Windows.Forms.ToolStripStatusLabel
-    Friend WithEvents mnRptdvl As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents lstBarMain As vbAccelerator.Components.ListBarControl.ListBar
     Friend WithEvents mnWipnewImport As System.Windows.Forms.ToolStripMenuItem
-
+    Friend WithEvents mnRptMold As ToolStripMenuItem
 End Class

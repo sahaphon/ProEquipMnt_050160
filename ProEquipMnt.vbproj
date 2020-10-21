@@ -265,12 +265,6 @@
     <Compile Include="frmRptCentral.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRptDelvApprove.Designer.vb">
-      <DependentUpon>frmRptDelvApprove.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmRptDelvApprove.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmRptDelvApprove2.Designer.vb">
       <DependentUpon>frmRptDelvApprove2.vb</DependentUpon>
     </Compile>
@@ -451,10 +445,6 @@
     <EmbeddedResource Include="frmRptCentral.resx">
       <SubType>Designer</SubType>
       <DependentUpon>frmRptCentral.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRptDelvApprove.resx">
-      <SubType>Designer</SubType>
-      <DependentUpon>frmRptDelvApprove.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRptDelvApprove2.resx">
       <SubType>Designer</SubType>

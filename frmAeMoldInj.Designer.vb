@@ -132,7 +132,7 @@ Partial Class frmAeMoldInj
         Me.btnEditEqp1 = New System.Windows.Forms.Button()
         Me.btnDelEqp1 = New System.Windows.Forms.Button()
         Me.picEqp1 = New System.Windows.Forms.PictureBox()
-        Me.issue = New System.Windows.Forms.TabPage()
+        Me.tabIssue = New System.Windows.Forms.TabPage()
         Me.lblMold = New System.Windows.Forms.Label()
         Me.cmbFindSize = New System.Windows.Forms.ComboBox()
         Me.lblMoldPrice = New System.Windows.Forms.Label()
@@ -211,7 +211,7 @@ Partial Class frmAeMoldInj
         CType(Me.picEqp3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picEqp2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picEqp1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.issue.SuspendLayout()
+        Me.tabIssue.SuspendLayout()
         CType(Me.dgvHistory_issue, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gpbSeek.SuspendLayout()
         Me.gpbDiam.SuspendLayout()
@@ -259,9 +259,9 @@ Partial Class frmAeMoldInj
         Me.gpbHead.Controls.Add(Me.mskQty)
         Me.gpbHead.Controls.Add(Me.Label14)
         Me.gpbHead.Location = New System.Drawing.Point(20, 6)
-        Me.gpbHead.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.gpbHead.Margin = New System.Windows.Forms.Padding(6)
         Me.gpbHead.Name = "gpbHead"
-        Me.gpbHead.Padding = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.gpbHead.Padding = New System.Windows.Forms.Padding(6)
         Me.gpbHead.Size = New System.Drawing.Size(1762, 467)
         Me.gpbHead.TabIndex = 57
         Me.gpbHead.TabStop = False
@@ -273,7 +273,7 @@ Partial Class frmAeMoldInj
         Me.cmbStatus_mold.ForeColor = System.Drawing.Color.Blue
         Me.cmbStatus_mold.FormattingEnabled = True
         Me.cmbStatus_mold.Location = New System.Drawing.Point(1054, 227)
-        Me.cmbStatus_mold.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbStatus_mold.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbStatus_mold.Name = "cmbStatus_mold"
         Me.cmbStatus_mold.Size = New System.Drawing.Size(464, 45)
         Me.cmbStatus_mold.TabIndex = 148
@@ -338,7 +338,7 @@ Partial Class frmAeMoldInj
         Me.cmbPart.ForeColor = System.Drawing.Color.DarkViolet
         Me.cmbPart.FormattingEnabled = True
         Me.cmbPart.Location = New System.Drawing.Point(502, 308)
-        Me.cmbPart.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbPart.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbPart.Name = "cmbPart"
         Me.cmbPart.Size = New System.Drawing.Size(364, 45)
         Me.cmbPart.TabIndex = 71
@@ -349,7 +349,7 @@ Partial Class frmAeMoldInj
         Me.txtOrd.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtOrd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtOrd.Location = New System.Drawing.Point(614, 225)
-        Me.txtOrd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtOrd.Margin = New System.Windows.Forms.Padding(6)
         Me.txtOrd.MaxLength = 12
         Me.txtOrd.Name = "txtOrd"
         Me.txtOrd.Size = New System.Drawing.Size(248, 51)
@@ -374,7 +374,7 @@ Partial Class frmAeMoldInj
         Me.txtStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtStyle.Location = New System.Drawing.Point(168, 223)
-        Me.txtStyle.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtStyle.Margin = New System.Windows.Forms.Padding(6)
         Me.txtStyle.MaxLength = 12
         Me.txtStyle.Name = "txtStyle"
         Me.txtStyle.Size = New System.Drawing.Size(282, 51)
@@ -399,7 +399,7 @@ Partial Class frmAeMoldInj
         Me.txtEqpName.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtEqpName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtEqpName.Location = New System.Drawing.Point(702, 138)
-        Me.txtEqpName.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtEqpName.Margin = New System.Windows.Forms.Padding(6)
         Me.txtEqpName.MaxLength = 100
         Me.txtEqpName.Name = "txtEqpName"
         Me.txtEqpName.Size = New System.Drawing.Size(986, 51)
@@ -438,7 +438,7 @@ Partial Class frmAeMoldInj
         Me.txtEqpId.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtEqpId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtEqpId.Location = New System.Drawing.Point(168, 133)
-        Me.txtEqpId.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtEqpId.Margin = New System.Windows.Forms.Padding(6)
         Me.txtEqpId.MaxLength = 12
         Me.txtEqpId.Name = "txtEqpId"
         Me.txtEqpId.Size = New System.Drawing.Size(294, 51)
@@ -490,7 +490,7 @@ Partial Class frmAeMoldInj
         Me.cmbGp.ForeColor = System.Drawing.Color.DarkViolet
         Me.cmbGp.FormattingEnabled = True
         Me.cmbGp.Location = New System.Drawing.Point(168, 46)
-        Me.cmbGp.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbGp.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbGp.Name = "cmbGp"
         Me.cmbGp.Size = New System.Drawing.Size(294, 45)
         Me.cmbGp.TabIndex = 60
@@ -501,7 +501,7 @@ Partial Class frmAeMoldInj
         Me.txtRemark.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtRemark.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtRemark.Location = New System.Drawing.Point(168, 387)
-        Me.txtRemark.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtRemark.Margin = New System.Windows.Forms.Padding(6)
         Me.txtRemark.MaxLength = 150
         Me.txtRemark.Name = "txtRemark"
         Me.txtRemark.Size = New System.Drawing.Size(1520, 51)
@@ -525,7 +525,7 @@ Partial Class frmAeMoldInj
         Me.txtBegin.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtBegin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtBegin.Location = New System.Drawing.Point(1692, 108)
-        Me.txtBegin.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtBegin.Margin = New System.Windows.Forms.Padding(6)
         Me.txtBegin.MaxLength = 5
         Me.txtBegin.Name = "txtBegin"
         Me.txtBegin.Size = New System.Drawing.Size(94, 51)
@@ -540,7 +540,7 @@ Partial Class frmAeMoldInj
         Me.mskBegin.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mskBegin.ForeColor = System.Drawing.Color.White
         Me.mskBegin.Location = New System.Drawing.Point(1692, 108)
-        Me.mskBegin.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.mskBegin.Margin = New System.Windows.Forms.Padding(6)
         Me.mskBegin.Mask = "99/99/9999"
         Me.mskBegin.Name = "mskBegin"
         Me.mskBegin.Size = New System.Drawing.Size(74, 51)
@@ -566,7 +566,7 @@ Partial Class frmAeMoldInj
         Me.txtSet.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtSet.ForeColor = System.Drawing.Color.Green
         Me.txtSet.Location = New System.Drawing.Point(1036, 308)
-        Me.txtSet.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtSet.Margin = New System.Windows.Forms.Padding(6)
         Me.txtSet.MaxLength = 100
         Me.txtSet.Name = "txtSet"
         Me.txtSet.ReadOnly = True
@@ -581,7 +581,7 @@ Partial Class frmAeMoldInj
         Me.mskQty.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.mskQty.ForeColor = System.Drawing.SystemColors.Window
         Me.mskQty.Location = New System.Drawing.Point(1036, 308)
-        Me.mskQty.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.mskQty.Margin = New System.Windows.Forms.Padding(6)
         Me.mskQty.Mask = "99.9"
         Me.mskQty.Name = "mskQty"
         Me.mskQty.Size = New System.Drawing.Size(120, 51)
@@ -607,7 +607,7 @@ Partial Class frmAeMoldInj
         Me.txtExpId.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtExpId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtExpId.Location = New System.Drawing.Point(1794, 294)
-        Me.txtExpId.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtExpId.Margin = New System.Windows.Forms.Padding(6)
         Me.txtExpId.MaxLength = 12
         Me.txtExpId.Name = "txtExpId"
         Me.txtExpId.Size = New System.Drawing.Size(218, 51)
@@ -620,7 +620,7 @@ Partial Class frmAeMoldInj
         Me.txtSuplier.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtSuplier.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtSuplier.Location = New System.Drawing.Point(714, 348)
-        Me.txtSuplier.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtSuplier.Margin = New System.Windows.Forms.Padding(6)
         Me.txtSuplier.MaxLength = 90
         Me.txtSuplier.Name = "txtSuplier"
         Me.txtSuplier.Size = New System.Drawing.Size(702, 51)
@@ -634,7 +634,7 @@ Partial Class frmAeMoldInj
         Me.cmbType.ForeColor = System.Drawing.Color.DarkViolet
         Me.cmbType.FormattingEnabled = True
         Me.cmbType.Location = New System.Drawing.Point(1624, 346)
-        Me.cmbType.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbType.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbType.Name = "cmbType"
         Me.cmbType.Size = New System.Drawing.Size(290, 45)
         Me.cmbType.TabIndex = 75
@@ -657,7 +657,7 @@ Partial Class frmAeMoldInj
         Me.txtRef.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtRef.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtRef.Location = New System.Drawing.Point(1798, 258)
-        Me.txtRef.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtRef.Margin = New System.Windows.Forms.Padding(6)
         Me.txtRef.MaxLength = 12
         Me.txtRef.Name = "txtRef"
         Me.txtRef.Size = New System.Drawing.Size(228, 51)
@@ -668,13 +668,13 @@ Partial Class frmAeMoldInj
         '
         Me.tabMain.Controls.Add(Me.tabSize)
         Me.tabMain.Controls.Add(Me.tabPic)
-        Me.tabMain.Controls.Add(Me.issue)
+        Me.tabMain.Controls.Add(Me.tabIssue)
         Me.tabMain.ItemSize = New System.Drawing.Size(62, 30)
         Me.tabMain.Location = New System.Drawing.Point(20, 485)
-        Me.tabMain.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.tabMain.Margin = New System.Windows.Forms.Padding(6)
         Me.tabMain.Name = "tabMain"
         Me.tabMain.SelectedIndex = 0
-        Me.tabMain.Size = New System.Drawing.Size(2008, 844)
+        Me.tabMain.Size = New System.Drawing.Size(2008, 836)
         Me.tabMain.TabIndex = 60
         '
         'tabSize
@@ -684,10 +684,10 @@ Partial Class frmAeMoldInj
         Me.tabSize.Controls.Add(Me.btnEdit)
         Me.tabSize.Controls.Add(Me.btnAdd)
         Me.tabSize.Location = New System.Drawing.Point(8, 38)
-        Me.tabSize.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.tabSize.Margin = New System.Windows.Forms.Padding(6)
         Me.tabSize.Name = "tabSize"
-        Me.tabSize.Padding = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.tabSize.Size = New System.Drawing.Size(1992, 798)
+        Me.tabSize.Padding = New System.Windows.Forms.Padding(6)
+        Me.tabSize.Size = New System.Drawing.Size(1992, 790)
         Me.tabSize.TabIndex = 0
         Me.tabSize.Text = "ข้อมูล SIZE"
         Me.tabSize.UseVisualStyleBackColor = True
@@ -720,7 +720,7 @@ Partial Class frmAeMoldInj
         Me.dgvSize.DefaultCellStyle = DataGridViewCellStyle19
         Me.dgvSize.GridColor = System.Drawing.Color.DarkGray
         Me.dgvSize.Location = New System.Drawing.Point(18, 100)
-        Me.dgvSize.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.dgvSize.Margin = New System.Windows.Forms.Padding(6)
         Me.dgvSize.MultiSelect = False
         Me.dgvSize.Name = "dgvSize"
         Me.dgvSize.ReadOnly = True
@@ -962,7 +962,7 @@ Partial Class frmAeMoldInj
         Me.btnDel.Image = CType(resources.GetObject("btnDel.Image"), System.Drawing.Image)
         Me.btnDel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnDel.Location = New System.Drawing.Point(1800, 12)
-        Me.btnDel.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnDel.Margin = New System.Windows.Forms.Padding(6)
         Me.btnDel.Name = "btnDel"
         Me.btnDel.Size = New System.Drawing.Size(180, 77)
         Me.btnDel.TabIndex = 105
@@ -976,7 +976,7 @@ Partial Class frmAeMoldInj
         Me.btnEdit.Image = CType(resources.GetObject("btnEdit.Image"), System.Drawing.Image)
         Me.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnEdit.Location = New System.Drawing.Point(1610, 13)
-        Me.btnEdit.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnEdit.Margin = New System.Windows.Forms.Padding(6)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.Size = New System.Drawing.Size(180, 75)
         Me.btnEdit.TabIndex = 104
@@ -990,7 +990,7 @@ Partial Class frmAeMoldInj
         Me.btnAdd.Image = CType(resources.GetObject("btnAdd.Image"), System.Drawing.Image)
         Me.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnAdd.Location = New System.Drawing.Point(1412, 13)
-        Me.btnAdd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(6)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(188, 75)
         Me.btnAdd.TabIndex = 103
@@ -1020,10 +1020,10 @@ Partial Class frmAeMoldInj
         Me.tabPic.Controls.Add(Me.btnDelEqp1)
         Me.tabPic.Controls.Add(Me.picEqp1)
         Me.tabPic.Location = New System.Drawing.Point(8, 38)
-        Me.tabPic.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.tabPic.Margin = New System.Windows.Forms.Padding(6)
         Me.tabPic.Name = "tabPic"
-        Me.tabPic.Padding = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.tabPic.Size = New System.Drawing.Size(1992, 798)
+        Me.tabPic.Padding = New System.Windows.Forms.Padding(6)
+        Me.tabPic.Size = New System.Drawing.Size(1992, 790)
         Me.tabPic.TabIndex = 1
         Me.tabPic.Text = "ข้อมูลรูปภาพ"
         Me.tabPic.UseVisualStyleBackColor = True
@@ -1033,7 +1033,7 @@ Partial Class frmAeMoldInj
         Me.lblPicName3.BackColor = System.Drawing.Color.Red
         Me.lblPicName3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPicName3.ForeColor = System.Drawing.Color.GhostWhite
-        Me.lblPicName3.Location = New System.Drawing.Point(1356, 575)
+        Me.lblPicName3.Location = New System.Drawing.Point(1356, 564)
         Me.lblPicName3.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblPicName3.Name = "lblPicName3"
         Me.lblPicName3.Size = New System.Drawing.Size(580, 58)
@@ -1046,7 +1046,7 @@ Partial Class frmAeMoldInj
         Me.lblPicPath3.BackColor = System.Drawing.Color.Gray
         Me.lblPicPath3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPicPath3.ForeColor = System.Drawing.Color.GhostWhite
-        Me.lblPicPath3.Location = New System.Drawing.Point(1356, 517)
+        Me.lblPicPath3.Location = New System.Drawing.Point(1356, 506)
         Me.lblPicPath3.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblPicPath3.Name = "lblPicPath3"
         Me.lblPicPath3.Size = New System.Drawing.Size(580, 58)
@@ -1059,7 +1059,7 @@ Partial Class frmAeMoldInj
         Me.lblPicName2.BackColor = System.Drawing.Color.Red
         Me.lblPicName2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPicName2.ForeColor = System.Drawing.Color.GhostWhite
-        Me.lblPicName2.Location = New System.Drawing.Point(704, 571)
+        Me.lblPicName2.Location = New System.Drawing.Point(704, 560)
         Me.lblPicName2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblPicName2.Name = "lblPicName2"
         Me.lblPicName2.Size = New System.Drawing.Size(580, 58)
@@ -1072,7 +1072,7 @@ Partial Class frmAeMoldInj
         Me.lblPicPath2.BackColor = System.Drawing.Color.Gray
         Me.lblPicPath2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPicPath2.ForeColor = System.Drawing.Color.GhostWhite
-        Me.lblPicPath2.Location = New System.Drawing.Point(704, 513)
+        Me.lblPicPath2.Location = New System.Drawing.Point(704, 502)
         Me.lblPicPath2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblPicPath2.Name = "lblPicPath2"
         Me.lblPicPath2.Size = New System.Drawing.Size(580, 58)
@@ -1085,7 +1085,7 @@ Partial Class frmAeMoldInj
         Me.Label25.BackColor = System.Drawing.Color.Gray
         Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label25.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label25.Location = New System.Drawing.Point(1540, 62)
+        Me.Label25.Location = New System.Drawing.Point(1540, 51)
         Me.Label25.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(190, 40)
@@ -1098,7 +1098,7 @@ Partial Class frmAeMoldInj
         Me.Label24.BackColor = System.Drawing.Color.Gray
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label24.Location = New System.Drawing.Point(882, 62)
+        Me.Label24.Location = New System.Drawing.Point(882, 46)
         Me.Label24.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(236, 40)
@@ -1111,7 +1111,7 @@ Partial Class frmAeMoldInj
         Me.lblPicDesc.BackColor = System.Drawing.Color.Gray
         Me.lblPicDesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPicDesc.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPicDesc.Location = New System.Drawing.Point(238, 62)
+        Me.lblPicDesc.Location = New System.Drawing.Point(238, 51)
         Me.lblPicDesc.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblPicDesc.Name = "lblPicDesc"
         Me.lblPicDesc.Size = New System.Drawing.Size(190, 40)
@@ -1124,7 +1124,7 @@ Partial Class frmAeMoldInj
         Me.lblPicName1.BackColor = System.Drawing.Color.Red
         Me.lblPicName1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPicName1.ForeColor = System.Drawing.Color.GhostWhite
-        Me.lblPicName1.Location = New System.Drawing.Point(52, 571)
+        Me.lblPicName1.Location = New System.Drawing.Point(52, 560)
         Me.lblPicName1.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblPicName1.Name = "lblPicName1"
         Me.lblPicName1.Size = New System.Drawing.Size(580, 58)
@@ -1137,7 +1137,7 @@ Partial Class frmAeMoldInj
         Me.lblPicPath1.BackColor = System.Drawing.Color.Gray
         Me.lblPicPath1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPicPath1.ForeColor = System.Drawing.Color.GhostWhite
-        Me.lblPicPath1.Location = New System.Drawing.Point(52, 513)
+        Me.lblPicPath1.Location = New System.Drawing.Point(52, 502)
         Me.lblPicPath1.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblPicPath1.Name = "lblPicPath1"
         Me.lblPicPath1.Size = New System.Drawing.Size(580, 58)
@@ -1152,8 +1152,8 @@ Partial Class frmAeMoldInj
         Me.btnEditEqp3.ForeColor = System.Drawing.Color.Black
         Me.btnEditEqp3.Image = Global.ProEquipMnt.My.Resources.Resources.Camera
         Me.btnEditEqp3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnEditEqp3.Location = New System.Drawing.Point(1456, 665)
-        Me.btnEditEqp3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnEditEqp3.Location = New System.Drawing.Point(1456, 654)
+        Me.btnEditEqp3.Margin = New System.Windows.Forms.Padding(6)
         Me.btnEditEqp3.Name = "btnEditEqp3"
         Me.btnEditEqp3.Size = New System.Drawing.Size(170, 98)
         Me.btnEditEqp3.TabIndex = 138
@@ -1168,8 +1168,8 @@ Partial Class frmAeMoldInj
         Me.btnDelEqp3.ForeColor = System.Drawing.Color.Black
         Me.btnDelEqp3.Image = Global.ProEquipMnt.My.Resources.Resources._Erase
         Me.btnDelEqp3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnDelEqp3.Location = New System.Drawing.Point(1696, 665)
-        Me.btnDelEqp3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnDelEqp3.Location = New System.Drawing.Point(1696, 654)
+        Me.btnDelEqp3.Margin = New System.Windows.Forms.Padding(6)
         Me.btnDelEqp3.Name = "btnDelEqp3"
         Me.btnDelEqp3.Size = New System.Drawing.Size(170, 98)
         Me.btnDelEqp3.TabIndex = 139
@@ -1184,8 +1184,8 @@ Partial Class frmAeMoldInj
         Me.btnEditEqp2.ForeColor = System.Drawing.Color.Black
         Me.btnEditEqp2.Image = Global.ProEquipMnt.My.Resources.Resources.Camera
         Me.btnEditEqp2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnEditEqp2.Location = New System.Drawing.Point(802, 665)
-        Me.btnEditEqp2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnEditEqp2.Location = New System.Drawing.Point(802, 654)
+        Me.btnEditEqp2.Margin = New System.Windows.Forms.Padding(6)
         Me.btnEditEqp2.Name = "btnEditEqp2"
         Me.btnEditEqp2.Size = New System.Drawing.Size(170, 98)
         Me.btnEditEqp2.TabIndex = 136
@@ -1200,8 +1200,8 @@ Partial Class frmAeMoldInj
         Me.btnDelEqp2.ForeColor = System.Drawing.Color.Black
         Me.btnDelEqp2.Image = Global.ProEquipMnt.My.Resources.Resources._Erase
         Me.btnDelEqp2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnDelEqp2.Location = New System.Drawing.Point(1042, 665)
-        Me.btnDelEqp2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnDelEqp2.Location = New System.Drawing.Point(1042, 654)
+        Me.btnDelEqp2.Margin = New System.Windows.Forms.Padding(6)
         Me.btnDelEqp2.Name = "btnDelEqp2"
         Me.btnDelEqp2.Size = New System.Drawing.Size(170, 98)
         Me.btnDelEqp2.TabIndex = 137
@@ -1216,8 +1216,8 @@ Partial Class frmAeMoldInj
         Me.picEqp3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.picEqp3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.picEqp3.ImageLocation = ""
-        Me.picEqp3.Location = New System.Drawing.Point(1338, 104)
-        Me.picEqp3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.picEqp3.Location = New System.Drawing.Point(1338, 93)
+        Me.picEqp3.Margin = New System.Windows.Forms.Padding(6)
         Me.picEqp3.Name = "picEqp3"
         Me.picEqp3.Size = New System.Drawing.Size(622, 548)
         Me.picEqp3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -1231,8 +1231,8 @@ Partial Class frmAeMoldInj
         Me.picEqp2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.picEqp2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.picEqp2.ImageLocation = ""
-        Me.picEqp2.Location = New System.Drawing.Point(684, 104)
-        Me.picEqp2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.picEqp2.Location = New System.Drawing.Point(684, 93)
+        Me.picEqp2.Margin = New System.Windows.Forms.Padding(6)
         Me.picEqp2.Name = "picEqp2"
         Me.picEqp2.Size = New System.Drawing.Size(622, 548)
         Me.picEqp2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -1246,8 +1246,8 @@ Partial Class frmAeMoldInj
         Me.btnEditEqp1.ForeColor = System.Drawing.Color.Black
         Me.btnEditEqp1.Image = Global.ProEquipMnt.My.Resources.Resources.Camera
         Me.btnEditEqp1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnEditEqp1.Location = New System.Drawing.Point(122, 665)
-        Me.btnEditEqp1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnEditEqp1.Location = New System.Drawing.Point(122, 654)
+        Me.btnEditEqp1.Margin = New System.Windows.Forms.Padding(6)
         Me.btnEditEqp1.Name = "btnEditEqp1"
         Me.btnEditEqp1.Size = New System.Drawing.Size(170, 98)
         Me.btnEditEqp1.TabIndex = 129
@@ -1262,8 +1262,8 @@ Partial Class frmAeMoldInj
         Me.btnDelEqp1.ForeColor = System.Drawing.Color.Black
         Me.btnDelEqp1.Image = Global.ProEquipMnt.My.Resources.Resources._Erase
         Me.btnDelEqp1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnDelEqp1.Location = New System.Drawing.Point(362, 665)
-        Me.btnDelEqp1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnDelEqp1.Location = New System.Drawing.Point(362, 654)
+        Me.btnDelEqp1.Margin = New System.Windows.Forms.Padding(6)
         Me.btnDelEqp1.Name = "btnDelEqp1"
         Me.btnDelEqp1.Size = New System.Drawing.Size(170, 98)
         Me.btnDelEqp1.TabIndex = 130
@@ -1278,32 +1278,32 @@ Partial Class frmAeMoldInj
         Me.picEqp1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.picEqp1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.picEqp1.ImageLocation = ""
-        Me.picEqp1.Location = New System.Drawing.Point(32, 104)
-        Me.picEqp1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.picEqp1.Location = New System.Drawing.Point(32, 93)
+        Me.picEqp1.Margin = New System.Windows.Forms.Padding(6)
         Me.picEqp1.Name = "picEqp1"
         Me.picEqp1.Size = New System.Drawing.Size(608, 546)
         Me.picEqp1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.picEqp1.TabIndex = 45
         Me.picEqp1.TabStop = False
         '
-        'issue
+        'tabIssue
         '
-        Me.issue.Controls.Add(Me.lblMold)
-        Me.issue.Controls.Add(Me.cmbFindSize)
-        Me.issue.Controls.Add(Me.lblMoldPrice)
-        Me.issue.Controls.Add(Me.dgvHistory_issue)
-        Me.issue.Controls.Add(Me.Label32)
-        Me.issue.Controls.Add(Me.Label13)
-        Me.issue.Controls.Add(Me.lblsize)
-        Me.issue.Controls.Add(Me.Label2)
-        Me.issue.Location = New System.Drawing.Point(8, 38)
-        Me.issue.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.issue.Name = "issue"
-        Me.issue.Padding = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.issue.Size = New System.Drawing.Size(1992, 798)
-        Me.issue.TabIndex = 2
-        Me.issue.Text = "ประวัติการซ่อมโมล์ด"
-        Me.issue.UseVisualStyleBackColor = True
+        Me.tabIssue.BackColor = System.Drawing.Color.White
+        Me.tabIssue.Controls.Add(Me.lblMold)
+        Me.tabIssue.Controls.Add(Me.cmbFindSize)
+        Me.tabIssue.Controls.Add(Me.lblMoldPrice)
+        Me.tabIssue.Controls.Add(Me.dgvHistory_issue)
+        Me.tabIssue.Controls.Add(Me.Label32)
+        Me.tabIssue.Controls.Add(Me.Label13)
+        Me.tabIssue.Controls.Add(Me.lblsize)
+        Me.tabIssue.Controls.Add(Me.Label2)
+        Me.tabIssue.Location = New System.Drawing.Point(8, 38)
+        Me.tabIssue.Margin = New System.Windows.Forms.Padding(6)
+        Me.tabIssue.Name = "tabIssue"
+        Me.tabIssue.Padding = New System.Windows.Forms.Padding(6)
+        Me.tabIssue.Size = New System.Drawing.Size(1992, 790)
+        Me.tabIssue.TabIndex = 2
+        Me.tabIssue.Text = "ประวัติการซ่อมโมล์ด"
         '
         'lblMold
         '
@@ -1326,7 +1326,7 @@ Partial Class frmAeMoldInj
         Me.cmbFindSize.ForeColor = System.Drawing.Color.Yellow
         Me.cmbFindSize.FormattingEnabled = True
         Me.cmbFindSize.Location = New System.Drawing.Point(1684, 13)
-        Me.cmbFindSize.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbFindSize.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbFindSize.Name = "cmbFindSize"
         Me.cmbFindSize.Size = New System.Drawing.Size(270, 44)
         Me.cmbFindSize.TabIndex = 109
@@ -1373,7 +1373,7 @@ Partial Class frmAeMoldInj
         Me.dgvHistory_issue.DefaultCellStyle = DataGridViewCellStyle32
         Me.dgvHistory_issue.GridColor = System.Drawing.Color.DarkGray
         Me.dgvHistory_issue.Location = New System.Drawing.Point(32, 73)
-        Me.dgvHistory_issue.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.dgvHistory_issue.Margin = New System.Windows.Forms.Padding(6)
         Me.dgvHistory_issue.MultiSelect = False
         Me.dgvHistory_issue.Name = "dgvHistory_issue"
         Me.dgvHistory_issue.ReadOnly = True
@@ -1388,7 +1388,7 @@ Partial Class frmAeMoldInj
         Me.dgvHistory_issue.RowHeadersVisible = False
         Me.dgvHistory_issue.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.dgvHistory_issue.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvHistory_issue.Size = New System.Drawing.Size(1926, 600)
+        Me.dgvHistory_issue.Size = New System.Drawing.Size(1926, 595)
         Me.dgvHistory_issue.TabIndex = 107
         '
         'DataGridViewTextBoxColumn1
@@ -1590,11 +1590,11 @@ Partial Class frmAeMoldInj
         Me.gpbSeek.Controls.Add(Me.mskSizeQty)
         Me.gpbSeek.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.gpbSeek.ForeColor = System.Drawing.Color.Blue
-        Me.gpbSeek.Location = New System.Drawing.Point(8, 1251)
-        Me.gpbSeek.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.gpbSeek.Location = New System.Drawing.Point(8, 1300)
+        Me.gpbSeek.Margin = New System.Windows.Forms.Padding(6)
         Me.gpbSeek.Name = "gpbSeek"
-        Me.gpbSeek.Padding = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.gpbSeek.Size = New System.Drawing.Size(2022, 271)
+        Me.gpbSeek.Padding = New System.Windows.Forms.Padding(6)
+        Me.gpbSeek.Size = New System.Drawing.Size(2022, 10)
         Me.gpbSeek.TabIndex = 93
         Me.gpbSeek.TabStop = False
         Me.gpbSeek.Text = "เพิ่มข้อมูล"
@@ -1620,7 +1620,7 @@ Partial Class frmAeMoldInj
         Me.txtImpt.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtImpt.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtImpt.Location = New System.Drawing.Point(186, 348)
-        Me.txtImpt.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtImpt.Margin = New System.Windows.Forms.Padding(6)
         Me.txtImpt.MaxLength = 12
         Me.txtImpt.Name = "txtImpt"
         Me.txtImpt.Size = New System.Drawing.Size(344, 51)
@@ -1645,7 +1645,7 @@ Partial Class frmAeMoldInj
         Me.txtInvoice.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtInvoice.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtInvoice.Location = New System.Drawing.Point(640, 438)
-        Me.txtInvoice.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtInvoice.Margin = New System.Windows.Forms.Padding(6)
         Me.txtInvoice.MaxLength = 12
         Me.txtInvoice.Name = "txtInvoice"
         Me.txtInvoice.Size = New System.Drawing.Size(290, 51)
@@ -1657,7 +1657,7 @@ Partial Class frmAeMoldInj
         Me.txtMouth_mold.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtMouth_mold.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.txtMouth_mold.Location = New System.Drawing.Point(1206, 438)
-        Me.txtMouth_mold.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtMouth_mold.Margin = New System.Windows.Forms.Padding(6)
         Me.txtMouth_mold.MaxLength = 100
         Me.txtMouth_mold.Name = "txtMouth_mold"
         Me.txtMouth_mold.Size = New System.Drawing.Size(156, 51)
@@ -1672,7 +1672,7 @@ Partial Class frmAeMoldInj
         Me.mskMouth_mold.ForeColor = System.Drawing.Color.White
         Me.mskMouth_mold.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert
         Me.mskMouth_mold.Location = New System.Drawing.Point(1206, 438)
-        Me.mskMouth_mold.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.mskMouth_mold.Margin = New System.Windows.Forms.Padding(6)
         Me.mskMouth_mold.Mask = "#,##0.00"
         Me.mskMouth_mold.Name = "mskMouth_mold"
         Me.mskMouth_mold.Size = New System.Drawing.Size(154, 51)
@@ -1712,7 +1712,7 @@ Partial Class frmAeMoldInj
         Me.txtFcDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtFcDate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtFcDate.Location = New System.Drawing.Point(714, 171)
-        Me.txtFcDate.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtFcDate.Margin = New System.Windows.Forms.Padding(6)
         Me.txtFcDate.MaxLength = 5
         Me.txtFcDate.Name = "txtFcDate"
         Me.txtFcDate.Size = New System.Drawing.Size(268, 51)
@@ -1778,7 +1778,7 @@ Partial Class frmAeMoldInj
         Me.txtRmk.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtRmk.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtRmk.Location = New System.Drawing.Point(186, 527)
-        Me.txtRmk.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtRmk.Margin = New System.Windows.Forms.Padding(6)
         Me.txtRmk.MaxLength = 100
         Me.txtRmk.Name = "txtRmk"
         Me.txtRmk.Size = New System.Drawing.Size(604, 51)
@@ -1790,7 +1790,7 @@ Partial Class frmAeMoldInj
         Me.btnSeekSave.Image = Global.ProEquipMnt.My.Resources.Resources.accept
         Me.btnSeekSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnSeekSave.Location = New System.Drawing.Point(1644, 552)
-        Me.btnSeekSave.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnSeekSave.Margin = New System.Windows.Forms.Padding(6)
         Me.btnSeekSave.Name = "btnSeekSave"
         Me.btnSeekSave.Size = New System.Drawing.Size(134, 81)
         Me.btnSeekSave.TabIndex = 112
@@ -1805,7 +1805,7 @@ Partial Class frmAeMoldInj
         Me.btnSeekExit.Image = Global.ProEquipMnt.My.Resources.Resources.Delete_16x16
         Me.btnSeekExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnSeekExit.Location = New System.Drawing.Point(1790, 552)
-        Me.btnSeekExit.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnSeekExit.Margin = New System.Windows.Forms.Padding(6)
         Me.btnSeekExit.Name = "btnSeekExit"
         Me.btnSeekExit.Size = New System.Drawing.Size(132, 81)
         Me.btnSeekExit.TabIndex = 111
@@ -1819,7 +1819,7 @@ Partial Class frmAeMoldInj
         Me.txtPrice.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtPrice.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.txtPrice.Location = New System.Drawing.Point(802, 262)
-        Me.txtPrice.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtPrice.Margin = New System.Windows.Forms.Padding(6)
         Me.txtPrice.MaxLength = 100
         Me.txtPrice.Name = "txtPrice"
         Me.txtPrice.Size = New System.Drawing.Size(222, 51)
@@ -1846,7 +1846,7 @@ Partial Class frmAeMoldInj
         Me.txtPrDoc.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtPrDoc.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtPrDoc.Location = New System.Drawing.Point(186, 262)
-        Me.txtPrDoc.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtPrDoc.Margin = New System.Windows.Forms.Padding(6)
         Me.txtPrDoc.MaxLength = 12
         Me.txtPrDoc.Name = "txtPrDoc"
         Me.txtPrDoc.Size = New System.Drawing.Size(348, 51)
@@ -1878,9 +1878,9 @@ Partial Class frmAeMoldInj
         Me.gpbDiam.Controls.Add(Me.txtWd)
         Me.gpbDiam.Controls.Add(Me.mskWd)
         Me.gpbDiam.Location = New System.Drawing.Point(1104, 165)
-        Me.gpbDiam.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.gpbDiam.Margin = New System.Windows.Forms.Padding(6)
         Me.gpbDiam.Name = "gpbDiam"
-        Me.gpbDiam.Padding = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.gpbDiam.Padding = New System.Windows.Forms.Padding(6)
         Me.gpbDiam.Size = New System.Drawing.Size(818, 156)
         Me.gpbDiam.TabIndex = 89
         Me.gpbDiam.TabStop = False
@@ -1905,7 +1905,7 @@ Partial Class frmAeMoldInj
         Me.txtHg.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtHg.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.txtHg.Location = New System.Drawing.Point(608, 52)
-        Me.txtHg.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtHg.Margin = New System.Windows.Forms.Padding(6)
         Me.txtHg.MaxLength = 100
         Me.txtHg.Name = "txtHg"
         Me.txtHg.Size = New System.Drawing.Size(156, 51)
@@ -1919,7 +1919,7 @@ Partial Class frmAeMoldInj
         Me.txtLg.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtLg.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.txtLg.Location = New System.Drawing.Point(358, 52)
-        Me.txtLg.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtLg.Margin = New System.Windows.Forms.Padding(6)
         Me.txtLg.MaxLength = 100
         Me.txtLg.Name = "txtLg"
         Me.txtLg.Size = New System.Drawing.Size(156, 51)
@@ -1960,7 +1960,7 @@ Partial Class frmAeMoldInj
         Me.mskLg.ForeColor = System.Drawing.Color.White
         Me.mskLg.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert
         Me.mskLg.Location = New System.Drawing.Point(358, 52)
-        Me.mskLg.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.mskLg.Margin = New System.Windows.Forms.Padding(6)
         Me.mskLg.Mask = "#,##0.00"
         Me.mskLg.Name = "mskLg"
         Me.mskLg.Size = New System.Drawing.Size(154, 51)
@@ -1975,7 +1975,7 @@ Partial Class frmAeMoldInj
         Me.mskHg.ForeColor = System.Drawing.Color.White
         Me.mskHg.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert
         Me.mskHg.Location = New System.Drawing.Point(608, 52)
-        Me.mskHg.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.mskHg.Margin = New System.Windows.Forms.Padding(6)
         Me.mskHg.Mask = "#,##0.00"
         Me.mskHg.Name = "mskHg"
         Me.mskHg.Size = New System.Drawing.Size(154, 51)
@@ -1989,7 +1989,7 @@ Partial Class frmAeMoldInj
         Me.txtWd.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtWd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.txtWd.Location = New System.Drawing.Point(88, 56)
-        Me.txtWd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtWd.Margin = New System.Windows.Forms.Padding(6)
         Me.txtWd.MaxLength = 100
         Me.txtWd.Name = "txtWd"
         Me.txtWd.Size = New System.Drawing.Size(156, 51)
@@ -2004,7 +2004,7 @@ Partial Class frmAeMoldInj
         Me.mskWd.ForeColor = System.Drawing.Color.White
         Me.mskWd.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert
         Me.mskWd.Location = New System.Drawing.Point(88, 56)
-        Me.mskWd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.mskWd.Margin = New System.Windows.Forms.Padding(6)
         Me.mskWd.Mask = "#,##0.00"
         Me.mskWd.Name = "mskWd"
         Me.mskWd.Size = New System.Drawing.Size(154, 51)
@@ -2031,7 +2031,7 @@ Partial Class frmAeMoldInj
         Me.txtSizeDesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtSizeDesc.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtSizeDesc.Location = New System.Drawing.Point(636, 77)
-        Me.txtSizeDesc.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtSizeDesc.Margin = New System.Windows.Forms.Padding(6)
         Me.txtSizeDesc.MaxLength = 15
         Me.txtSizeDesc.Name = "txtSizeDesc"
         Me.txtSizeDesc.Size = New System.Drawing.Size(228, 51)
@@ -2044,7 +2044,7 @@ Partial Class frmAeMoldInj
         Me.txtSize.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtSize.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtSize.Location = New System.Drawing.Point(186, 79)
-        Me.txtSize.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtSize.Margin = New System.Windows.Forms.Padding(6)
         Me.txtSize.MaxLength = 10
         Me.txtSize.Name = "txtSize"
         Me.txtSize.Size = New System.Drawing.Size(170, 51)
@@ -2071,7 +2071,7 @@ Partial Class frmAeMoldInj
         Me.mskPrice.ForeColor = System.Drawing.Color.White
         Me.mskPrice.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert
         Me.mskPrice.Location = New System.Drawing.Point(802, 262)
-        Me.mskPrice.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.mskPrice.Margin = New System.Windows.Forms.Padding(6)
         Me.mskPrice.Mask = "###,##0.00"
         Me.mskPrice.Name = "mskPrice"
         Me.mskPrice.Size = New System.Drawing.Size(220, 51)
@@ -2085,7 +2085,7 @@ Partial Class frmAeMoldInj
         Me.txtWeight.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtWeight.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtWeight.Location = New System.Drawing.Point(1706, 75)
-        Me.txtWeight.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtWeight.Margin = New System.Windows.Forms.Padding(6)
         Me.txtWeight.MaxLength = 100
         Me.txtWeight.Name = "txtWeight"
         Me.txtWeight.Size = New System.Drawing.Size(206, 51)
@@ -2100,7 +2100,7 @@ Partial Class frmAeMoldInj
         Me.mskWeight.ForeColor = System.Drawing.Color.White
         Me.mskWeight.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert
         Me.mskWeight.Location = New System.Drawing.Point(1706, 75)
-        Me.mskWeight.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.mskWeight.Margin = New System.Windows.Forms.Padding(6)
         Me.mskWeight.Mask = "#,##0.00"
         Me.mskWeight.Name = "mskWeight"
         Me.mskWeight.Size = New System.Drawing.Size(204, 51)
@@ -2140,7 +2140,7 @@ Partial Class frmAeMoldInj
         Me.txtSetQty.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtSetQty.ForeColor = System.Drawing.Color.Green
         Me.txtSetQty.Location = New System.Drawing.Point(1034, 77)
-        Me.txtSetQty.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtSetQty.Margin = New System.Windows.Forms.Padding(6)
         Me.txtSetQty.MaxLength = 100
         Me.txtSetQty.Name = "txtSetQty"
         Me.txtSetQty.Size = New System.Drawing.Size(136, 51)
@@ -2154,7 +2154,7 @@ Partial Class frmAeMoldInj
         Me.mskSetQty.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.mskSetQty.ForeColor = System.Drawing.SystemColors.Window
         Me.mskSetQty.Location = New System.Drawing.Point(1034, 77)
-        Me.mskSetQty.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.mskSetQty.Margin = New System.Windows.Forms.Padding(6)
         Me.mskSetQty.Mask = "99.9"
         Me.mskSetQty.Name = "mskSetQty"
         Me.mskSetQty.Size = New System.Drawing.Size(134, 51)
@@ -2167,7 +2167,7 @@ Partial Class frmAeMoldInj
         Me.txtRecvDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtRecvDate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtRecvDate.Location = New System.Drawing.Point(186, 438)
-        Me.txtRecvDate.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtRecvDate.Margin = New System.Windows.Forms.Padding(6)
         Me.txtRecvDate.MaxLength = 5
         Me.txtRecvDate.Name = "txtRecvDate"
         Me.txtRecvDate.Size = New System.Drawing.Size(268, 51)
@@ -2181,7 +2181,7 @@ Partial Class frmAeMoldInj
         Me.mskRecvDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mskRecvDate.ForeColor = System.Drawing.Color.White
         Me.mskRecvDate.Location = New System.Drawing.Point(186, 438)
-        Me.mskRecvDate.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.mskRecvDate.Margin = New System.Windows.Forms.Padding(6)
         Me.mskRecvDate.Mask = "99/99/9999"
         Me.mskRecvDate.Name = "mskRecvDate"
         Me.mskRecvDate.Size = New System.Drawing.Size(266, 51)
@@ -2194,7 +2194,7 @@ Partial Class frmAeMoldInj
         Me.txtPrDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtPrDate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtPrDate.Location = New System.Drawing.Point(186, 171)
-        Me.txtPrDate.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtPrDate.Margin = New System.Windows.Forms.Padding(6)
         Me.txtPrDate.MaxLength = 5
         Me.txtPrDate.Name = "txtPrDate"
         Me.txtPrDate.Size = New System.Drawing.Size(268, 51)
@@ -2208,7 +2208,7 @@ Partial Class frmAeMoldInj
         Me.mskPrDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mskPrDate.ForeColor = System.Drawing.Color.White
         Me.mskPrDate.Location = New System.Drawing.Point(186, 171)
-        Me.mskPrDate.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.mskPrDate.Margin = New System.Windows.Forms.Padding(6)
         Me.mskPrDate.Mask = "99/99/9999"
         Me.mskPrDate.Name = "mskPrDate"
         Me.mskPrDate.Size = New System.Drawing.Size(266, 51)
@@ -2221,7 +2221,7 @@ Partial Class frmAeMoldInj
         Me.mskFcDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mskFcDate.ForeColor = System.Drawing.Color.White
         Me.mskFcDate.Location = New System.Drawing.Point(714, 171)
-        Me.mskFcDate.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.mskFcDate.Margin = New System.Windows.Forms.Padding(6)
         Me.mskFcDate.Mask = "99/99/9999"
         Me.mskFcDate.Name = "mskFcDate"
         Me.mskFcDate.Size = New System.Drawing.Size(266, 51)
@@ -2247,7 +2247,7 @@ Partial Class frmAeMoldInj
         Me.txtSizeQty.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.txtSizeQty.ForeColor = System.Drawing.Color.Green
         Me.txtSizeQty.Location = New System.Drawing.Point(1304, 75)
-        Me.txtSizeQty.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtSizeQty.Margin = New System.Windows.Forms.Padding(6)
         Me.txtSizeQty.MaxLength = 100
         Me.txtSizeQty.Name = "txtSizeQty"
         Me.txtSizeQty.Size = New System.Drawing.Size(136, 51)
@@ -2261,7 +2261,7 @@ Partial Class frmAeMoldInj
         Me.mskSizeQty.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.mskSizeQty.ForeColor = System.Drawing.SystemColors.Window
         Me.mskSizeQty.Location = New System.Drawing.Point(1304, 75)
-        Me.mskSizeQty.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.mskSizeQty.Margin = New System.Windows.Forms.Padding(6)
         Me.mskSizeQty.Mask = "99.9"
         Me.mskSizeQty.Name = "mskSizeQty"
         Me.mskSizeQty.Size = New System.Drawing.Size(134, 51)
@@ -2274,7 +2274,7 @@ Partial Class frmAeMoldInj
         Me.btnExit.Image = CType(resources.GetObject("btnExit.Image"), System.Drawing.Image)
         Me.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnExit.Location = New System.Drawing.Point(1798, 119)
-        Me.btnExit.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(6)
         Me.btnExit.MaximumSize = New System.Drawing.Size(234, 94)
         Me.btnExit.MinimumSize = New System.Drawing.Size(234, 94)
         Me.btnExit.Name = "btnExit"
@@ -2290,7 +2290,7 @@ Partial Class frmAeMoldInj
         Me.btnSaveData.Image = CType(resources.GetObject("btnSaveData.Image"), System.Drawing.Image)
         Me.btnSaveData.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnSaveData.Location = New System.Drawing.Point(1798, 17)
-        Me.btnSaveData.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnSaveData.Margin = New System.Windows.Forms.Padding(6)
         Me.btnSaveData.Name = "btnSaveData"
         Me.btnSaveData.Size = New System.Drawing.Size(234, 94)
         Me.btnSaveData.TabIndex = 58
@@ -2302,7 +2302,7 @@ Partial Class frmAeMoldInj
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(2028, 1287)
+        Me.ClientSize = New System.Drawing.Size(2053, 1325)
         Me.Controls.Add(Me.gpbSeek)
         Me.Controls.Add(Me.tabMain)
         Me.Controls.Add(Me.btnExit)
@@ -2312,9 +2312,7 @@ Partial Class frmAeMoldInj
         Me.Controls.Add(Me.txtRef)
         Me.Controls.Add(Me.txtExpId)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.MaximumSize = New System.Drawing.Size(2054, 1358)
-        Me.MinimumSize = New System.Drawing.Size(2054, 1331)
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "frmAeMoldInj"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frmAeMoldInj"
@@ -2327,8 +2325,8 @@ Partial Class frmAeMoldInj
         CType(Me.picEqp3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picEqp2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picEqp1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.issue.ResumeLayout(False)
-        Me.issue.PerformLayout()
+        Me.tabIssue.ResumeLayout(False)
+        Me.tabIssue.PerformLayout()
         CType(Me.dgvHistory_issue, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gpbSeek.ResumeLayout(False)
         Me.gpbSeek.PerformLayout()
@@ -2443,7 +2441,7 @@ Partial Class frmAeMoldInj
     Friend WithEvents dgvSize As System.Windows.Forms.DataGridView
     Friend WithEvents txtBegin As System.Windows.Forms.TextBox
     Friend WithEvents mskBegin As System.Windows.Forms.MaskedTextBox
-    Friend WithEvents issue As System.Windows.Forms.TabPage
+    Friend WithEvents tabIssue As System.Windows.Forms.TabPage
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents dgvHistory_issue As System.Windows.Forms.DataGridView
     Friend WithEvents Label32 As System.Windows.Forms.Label
