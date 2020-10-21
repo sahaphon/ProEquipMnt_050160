@@ -25,8 +25,8 @@ End Property
 Private Sub frmAeArkBlk_FormClosed(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosedEventArgs) Handles Me.FormClosed
    ClearTmpTable(0, "")  'ลบข้อมูล Table tmp_eqptrn where user_id..
    frmArkBlk.lblCmd.Text = "0"  'เคลียร์สถานะ
-   Me.Dispose()     'ทำลายฟอร์ม คืนหน่วยความจำ
-End Sub
+        Me.Dispose()     'ทำลายฟอร์ม คืนหน่วยความจำ
+    End Sub
 
 Private Sub frmAeArkBlk_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
   Dim dtComputer As Date = Now()
